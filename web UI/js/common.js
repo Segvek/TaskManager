@@ -13,7 +13,7 @@
 $(document).ready(function(){
 	//header slider
 
-	var Slide = ['file:///C:/Users/PC_Home/Google%20%D0%94%D0%B8%D1%81%D0%BA/praktikum/img/1.jpg', 'file:///C:/Users/PC_Home/Google%20%D0%94%D0%B8%D1%81%D0%BA/praktikum/img/2.jpg', 'file:///C:/Users/PC_Home/Google%20%D0%94%D0%B8%D1%81%D0%BA/praktikum/img/3.jpg', 'file:///C:/Users/PC_Home/Google%20%D0%94%D0%B8%D1%81%D0%BA/praktikum/img/4.jpg', 'file:///C:/Users/PC_Home/Google%20%D0%94%D0%B8%D1%81%D0%BA/praktikum/img/5.jpg'];
+	var Slide = ['/img/1.jpg', '/img/2.jpg', '/img/3.jpg', '/img/4.jpg', '/img/5.jpg'];
 	var FirstSlide = 0;
 	var Temp = 0;
 	var LastSlide = 4;
@@ -62,7 +62,7 @@ $(document).ready(function(){
 	});
 
 	$('#but1').click(function(){
-		//location.href = 'file:///C:/Users/PC_Home/Google%20%D0%94%D0%B8%D1%81%D0%BA/praktikum/home.html';
+		//location.href = '/home.html';
 	});
 
 	$('.list-tomorrow button').click(function(){
