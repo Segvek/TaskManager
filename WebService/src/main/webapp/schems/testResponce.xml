@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<responce
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='APIResponсe.xsd'>
+    <authorization>
+        <sessionId>uyt6457f78675s5eretfuyg</sessionId>
+    </authorization>
+    
+    <registration>
+        <sessionId>uyt6457f78675s5eretfuyg</sessionId>
+    </registration>
+</responce>

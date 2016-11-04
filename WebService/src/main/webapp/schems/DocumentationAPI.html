@@ -1,0 +1,38 @@
+
+В данном документе описаны основние принципи и идеи API Task Manager, а также 
+представлены примери применения. 
+
+Идея работы с API простроена на запросах. Каждый запрос имеет следующую структуру:
+<request
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='APIRequest.xsd'>
+    <header>
+        <user>
+            ...
+        </user>
+    </header>
+    <content>
+        ...
+    </content>  
+</request>
+
+Из даного примера видно что запрос делиться на две логические области заголовок и тело.
+Заголовок запроса содержыт в себе информацию о пользователе, а тело соответственно сам запрос. 
+
+Для начала работы с сервисом (выполнение запросов) необходимо пройти авторизацию 
+для её прохождения необходимо указать имя пользователя и пароль 
+(пароль передавать в закодированом виде использовать метод шифрования md5)
+К примеру для пользователя с логином Vasya123 и паролем notProblem запрос на 
+авторизацю должен иметь следующий вид:
+<request
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='APIRequest.xsd'>
+    <header>
+        <user>
+            <authorization>
+                <name>Vasya123</name> <!--логин пользователя-->
+                <hashPass>H53jJKNKhn45J43Jh4Hj4h245kh2k4j8</hashPass> <!--закодированый поароль "notProblem"-->
+            </authorization>
+        </user>
+    </header> 
+</request>

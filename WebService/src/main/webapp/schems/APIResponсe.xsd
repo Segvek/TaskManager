@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="responce">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="authorization" type="Authorization" minOccurs="0"/>
+                <xs:element name="registration" type="Registration" minOccurs="0"/>
+                <!--сюда добавлять новые функции-->
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="Registration">
+        <xs:annotation>
+            <xs:documentation>
+                Этот елемент содержит идентификатор пользователя в случае 
+                успешной регистрации
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Authorization">
+        <xs:annotation>
+            <xs:documentation>
+                Этот елемент содержит идентификатор пользователя в случае 
+                успешной авторизации
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

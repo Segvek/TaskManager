@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<request
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='APIRequest.xsd'>
+    <!--Пример запроса на регистрацию-->
+    <registration>
+        <name>YuriPanasenco</name>
+        <mail>Panasenco@outlook.com</mail>
+        <hashPass>12345</hashPass>
+    </registration>    
+        
+    <!--Пример запроса на авторизацию-->
+    <authorization>
+        <name>ebtb</name>
+        <hashPass>sdfvrf</hashPass>
+    </authorization>
+    
+    <!--Пример запроса для подтверждения регистрации-->
+    <confirmation>
+        <key>uijonuhibjonot6f5ft7</key>
+    </confirmation>
+    
+    <!--пример запроса на создание цели-->
+    <createGoal>
+        <user>tnlekmgregreko54ymn6oyh5k4my</user>
+        <name>Название цели</name>
+        <anotation>Краткое описание цели</anotation>
+        <beginDate>07.09.2016</beginDate>
+        <endDate>01.07.2018</endDate>
+        <plan>
+            <item>
+                <number>1</number>
+                <name>Получить высшее образование (Уровень бакалавр)</name>
+                <beginDate>01.09.2016</beginDate>
+                <endDate>01.07.2018</endDate>
+            </item>
+            <item>
+                <number>2</number>
+                <name>Накопить 5 тыс. доларов</name>
+                <beginDate>01.09.2016</beginDate>
+                <endDate>01.07.2018</endDate>
+                <acount>4</acount>
+            </item>
+        </plan>
+    </createGoal>
+    
+    <!--пример запроса на содание плана на завтра-->
+<!--    <createPlanToDay>
+        <date>04.09.2016</date>дата на когда создается план
+        <plan>
+            <item>
+                <number>1</number>
+                <name>Задание 1</name>
+                <status>Begin</status>
+                <globalPlan>
+                    <numberGoal>1</numberGoal>
+                    <numberItemPlan>2</numberItemPlan>
+                </globalPlan>
+            </item>
+            <item>
+                <number>2</number>
+                <name>Задание 2</name>
+                <status>Begin</status>
+            </item>
+        </plan>
+    </createPlanToDay>-->
+</request>
