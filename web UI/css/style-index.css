@@ -1,0 +1,298 @@
+.container{
+	margin: 0 auto;
+}
+
+.row{
+	margin: 0 auto;
+}
+body, html, *{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #FFF;
+	margin: 0;
+	
+}
+body{
+	background: #ECF0F1;
+}
+a{
+	color: #FFF;
+	
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+header{
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+}
+
+
+/*   
+*	index.php
+*
+*/
+.navb{
+	display: block;
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	padding-top: 10px;
+	min-height: 64px;
+	background: rgba(0, 0, 0, .5);
+	transition: all .4s;
+}
+.navb:hover{
+	background: rgba(0, 0, 0, .7);
+}
+#logo{
+	display: inline-block;
+	color: #FFF;
+	font-size: 30px;
+	cursor: default;
+}
+.nav-form{
+	float: right;
+	width: 200px;
+}
+.button{
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    background: none;
+    border: 3px solid white;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .4s;
+    outline:none;
+}
+#but1{
+	
+	left: 5px;
+	z-index: 1;
+}
+.button:hover{
+	color: #ffeb3b;
+	border-color: #ffeb3b;
+}
+#but2:hover{
+	z-index: 2;
+}
+
+/*   
+	Text navbar
+*/
+.nav-text{
+	margin: 100px 0 0 30px;
+	font-size: 30px;
+	text-transform: uppercase;
+	transition: all .3s;
+	cursor: default;
+}
+.nav-text:hover{
+	padding-left: 8px;
+}
+.nav-text:hover span{
+	padding-left: 32px;
+	opacity: 1;
+}
+.nav-text span{ 
+	font-size: 24px;
+	padding-left: 12px;
+	opacity: 0.5;
+	transition: all .6s;
+}
+.nav-text span:hover{ 
+	font-size: 30px;
+	opacity: 1;
+	color: #ffeb3b;
+}
+#s1{
+	cursor: pointer;
+}
+
+/*   
+	descriotion //
+*/
+.desc{
+	margin-top: 50px;
+}
+.text{
+	color:#777;
+	font-size: 20px;
+	text-align: center;
+}
+.desc i{
+	display: block;
+	color: #607d8b;
+	font-size: 50px;
+	text-align: center;
+	transition: all .5s;
+}
+.desc:hover i{
+	color: #2C3E50;
+}
+
+/*   
+	form ///////////////////////////
+*/
+#in,
+#out{
+	display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background: rgba(0, 0, 0, .77);
+	z-index: 999;
+	padding-top: 50vh;
+	margin-top: -120px;
+}
+#out{
+	margin-top: -180px;
+}
+#in p,
+#out p{
+	display: block;
+	position: relative;
+	top: 20px;
+	float: right;
+	font-size: 39px;
+    text-align: right;
+    text-align: center;
+	cursor: pointer;
+	font-family: Arial;
+	transition: all .5s;
+	transform: rotate(45deg);
+}
+#in p:hover,
+#out p:hover{
+	animation: rotating .5s ;
+	color: #ffeb3b;
+}
+@keyframes rotating{
+	0%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: rotate(-135deg);
+	}
+}
+#form-in,
+#form-out{
+	width: 200px;
+	margin: 0 auto;
+	z-index: 9999;
+}
+.input-text{
+	display: block;
+	padding: 8px;
+	width: 200px;
+	margin: 20px auto;
+	color: #000;
+	outline:none;
+
+}
+#in .button,
+#out .button{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	outline:none;
+	background: rgba(0, 0, 0, .5);
+}
+
+
+/*   
+*	home.php
+* style home page
+*/
+/*   
+	Menu 
+*/
+.nav-menu{
+	min-height: 44px;
+	background: rgba(0, 0, 0, .3);
+}
+.nav-menu li{
+	display: inline-block;
+	text-align: none;
+}
+.nav-menu a{
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 0 30px;
+	transition: all .5s;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+.nav-menu a:hover{
+	color: #ffeb3b;
+	background: rgba(0, 0, 0, .3);
+	border-bottom: 3px solid rgba(0, 0, 0, .8);
+}
+
+
+
+/*   
+*	FOOTER
+*	 style footer
+*/
+footer{
+	display: block;
+	min-height: 50px;
+	padding: 20px 0;
+	margin-top: 20px;
+	background: #FFF;
+}
+footer p{
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/*   
+*	MEDIA
+*	 media query
+*/
+
+@media only screen and (max-width: 768px){
+	.none{
+		margin: 0;
+	}
+	.navb{
+		background: rgba(0, 0, 0, .7);
+	}
+	.nav-text{
+		margin-top: 140px;
+	}
+	#logo{
+	    text-align: center;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.nav-form{
+		float: none;
+		margin: 20px auto;
+	}
+}
+@media only screen and (max-width: 992px){
+	
+}
+@media only screen and (max-width: 1200px){
+	
+}
+@media only screen and (max-width: 400px){
+	#logo{
+		display: none;
+	}
+}

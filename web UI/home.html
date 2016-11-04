@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title> My Task Manager</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/style-home.css" rel="stylesheet">
+<!-- 	<link href="css/jquery-ui.css" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/animation.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+	<!--[if IE 7]><link rel="stylesheet" href="css/guest-ie7.css"><![endif]-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+	$( function() {
+		$( "#sortable" ).sortable();
+		$( "#sortable" ).disableSelection();
+	} );
+	</script>
+
+</head>
+<body>
+
+
+	<header>
+		<div class="navb container-fluid">
+			<div class="container row">
+				<a href="#" class="col-sm-4"><div id="logo">TaskManager</div></a>
+				<div class="option">
+					<a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+					<div class="login">Dima Didyk</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="container-row row">
+		<div class="sidebar  col-sm-4 col-md-3">
+			<div class="menu">
+				<ul>
+					<a href="">
+						<li>Главгя</li>
+					</a>
+					<a href="">
+						<li>Список целей</li>
+					</a>
+					<a href="">
+						<li>Список счетов</li>
+					</a>
+				</ul>
+			</div>
+
+
+		</div>
+		
+		<div class="content col-sm-8 col-md-9">
+			<div class="list-today">
+				<h1>Список дел на сегодня</h1>
+				<ol>
+					<li>
+						<p class="name-task">name-task</p>
+						<p class="target-item">target-item</p>
+					</li>
+					<li>
+						<p class="name-task">name-task</p>
+						<p class="target-item">target-item</p>
+					</li>
+					<li>
+						<p class="name-task">name-task</p>
+						<p class="target-item">target-item</p>
+					</li>
+				</ol>
+			</div>
+			
+			<div class="list-tomorrow">
+				<h1>План на завтра</h1>
+				<ol id="sortable">
+					<li class="ui-state-default">
+						task
+						<input type="text" class="task-input-tomorrow" placeholder="Task">
+						<input type="text" class="Target-item-input-tomorrow" placeholder="Target-item">
+					</li>
+					<!-- <div class="add"></div> -->
+				</ol>
+				<div id="error-tomorrow" class="error"></div>
+				<button>Edit Task</button>
+				<input type="submit" value="Save" class="save">
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- <script src="http://code.jquery.com/jquery-2.1.0.js" type="text/javascript"></script> -->
+	
+	<<!-- script src="js/common.js" type="text/javascript"></script> -->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	
+
+
+</body>
+</html>
