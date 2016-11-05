@@ -8,6 +8,7 @@
             <xs:all>
                 <xs:element name="authorization" type="Authorization" minOccurs="0"/>
                 <xs:element name="registration" type="Registration" minOccurs="0"/>
+                <xs:element name="error" minOccurs="0"/>
                 <!--сюда добавлять новые функции-->
             </xs:all>
         </xs:complexType>

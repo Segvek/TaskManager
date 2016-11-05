@@ -42,7 +42,7 @@
                     </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="user"/>
+                            <xs:element name="sessionId"/>
                             <xs:element name="name"/>
                             <xs:element name="anotation"/>
                             <xs:element name="beginDate"/>
@@ -67,7 +67,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="createPlanToDay" minOccurs="0">
+<!--                <xs:element name="createPlanToDay" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>
                             Данная функция предназначена для создания цели авторизированым пользователем
@@ -110,7 +110,7 @@
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
-                </xs:element>
+                </xs:element>-->
                 <xs:element name="confirmation" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>
@@ -120,6 +120,18 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="key"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="closeSession" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Данная функция предназначена для завершения сесии пользователя который хочет выйти из акаунта
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sessionId"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

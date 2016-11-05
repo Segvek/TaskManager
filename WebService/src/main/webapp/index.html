@@ -4,46 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript">
-            function getXmlHttp() {
-                var xmlhttp;
-                try {
-                    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                } catch (e) {
-                    try {
-                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                    } catch (E) {
-                        xmlhttp = false;
-                    }
-                }
-                if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
-                    xmlhttp = new XMLHttpRequest();
-                }
-                return xmlhttp;
-            }
-
-            function sendrequest() {
-                var xmlhttp = getXmlHttp()
-                xmlhttp.open('GET', 'API', true);
-                xmlhttp.onreadystatechange = function () {
-                    if (xmlhttp.readyState == 4) {
-                        if (xmlhttp.status == 200) {
-                            var xmlr = xmlhttp.responseText;
-                            var xml = $.parseXML(xmlr);
-                            var $xml = $(xml), $test = $xml.find('hello');
-
-                            console.log($test.text()+"  "+xml.getElementsByTagName("hello")[0].innerHTML);
-
-                        }
-                    }
-                };
-                xmlhttp.send(null);
-            }
-
-        </script>
+        <script src="js/connector.js"></script>
+        <script src="js/userPageCarcas.js"></script>
+        <script src="js/util.js"></script>
+        <link href="css/bootstrap.css" rel="stylesheet">
     </head>
     <body>
-        <div>TODO write content</div>
-        <input type="button" value="Отправить запрос" name="get" onclick="sendrequest();"/>
-    </body>
+        <div id="content"></div>
+        <script src="js/welcomePage.js"></script>
+        <script type="text/javascript">
+            var thisFunction=welcomePage;
+            thisFunction();            
+        </script>
+    </body>    
 </html>

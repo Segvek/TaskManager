@@ -19,20 +19,14 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class API extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if (request.getContentType() != null && request.getContentType().equals("text/xml; charset=utf-8")) {
+        System.out.println("ContentType  :"+request.getContentType());
+        if (request.getContentType() != null && request.getContentType().equals("text/xml; charset=UTF-8")) {
             response.setContentType("text/xml;charset=UTF-8");
             String xmlRequest = InputStreamUtil.readInputStrean(request.getInputStream());
+            System.out.println("request:  "+xmlRequest);
             String xmlResponse = "error";
             try {
 

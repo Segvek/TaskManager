@@ -46,7 +46,7 @@ public class ParserManagerImpl implements ParserManager {
         GlobalParser globalParser = (GlobalParser) tempObj;
         InputSource source = new InputSource(new StringReader(xml));
 
-        String response = "";
+        String response = "parse exeption";
         try {
             SAXParserUtil.getParser().parse(source, (DefaultHandler) globalParser);
             response = globalParser.getResponce();

@@ -23,7 +23,7 @@
     
     <!--пример запроса на создание цели-->
     <createGoal>
-        <user>tnlekmgregreko54ymn6oyh5k4my</user>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
         <name>Название цели</name>
         <anotation>Краткое описание цели</anotation>
         <beginDate>07.09.2016</beginDate>
@@ -65,4 +65,8 @@
             </item>
         </plan>
     </createPlanToDay>-->
+    
+    <closeSession>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+    </closeSession>
 </request>

@@ -1,0 +1,48 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building WebService 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> tomcat-maven-plugin:1.1:run (default-cli) > compile @ WebService >>>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ WebService ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ WebService ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ WebService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< tomcat-maven-plugin:1.1:run (default-cli) < compile @ WebService <<<
+[INFO] 
+[INFO] --- tomcat-maven-plugin:1.1:run (default-cli) @ WebService ---
+[INFO] Running war on http://localhost:8080/WebService
+[INFO] Using existing Tomcat server configuration at C:\Users\Panas\OneDrive\Project\WebService\target\tomcat
+ContentType  :text/xml; charset=UTF-8
+request:  <request><closeSession> <sessionId>410c2eea076274576f5b200b2004ccbf</sessionId></closeSession></request>
+ContentType  :text/xml; charset=UTF-8
+request:  <request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+User{name=YuriPanasenco, mail=null, hashPass=12345, confirmation=null, acounts=[], fixingsAcounts=[], goals=[], planToDay=[]}
+Hibernate: select this_.id as id1_0_0_, this_.confirmation as confirma2_0_0_, this_.hashpass as hashpass3_0_0_, this_.mail as mail4_0_0_, this_.name as name5_0_0_ from User this_ where (this_.hashpass=? and this_.name=?)
+ContentType  :text/xml; charset=UTF-8
+request:  <request><closeSession> <sessionId>444a9405493b3056b16d806a7885199d</sessionId></closeSession></request>
+ContentType  :text/xml; charset=UTF-8
+request:  <request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+User{name=YuriPanasenco, mail=null, hashPass=12345, confirmation=null, acounts=[], fixingsAcounts=[], goals=[], planToDay=[]}
+Hibernate: select this_.id as id1_0_0_, this_.confirmation as confirma2_0_0_, this_.hashpass as hashpass3_0_0_, this_.mail as mail4_0_0_, this_.name as name5_0_0_ from User this_ where (this_.hashpass=? and this_.name=?)
+ContentType  :text/xml; charset=UTF-8
+request:  <request><closeSession> <sessionId>44deef76fddb342add6c8165b16fa74a</sessionId></closeSession></request>
+ContentType  :text/xml; charset=UTF-8
+request:  <request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+User{name=YuriPanasenco, mail=null, hashPass=12345, confirmation=null, acounts=[], fixingsAcounts=[], goals=[], planToDay=[]}
+Hibernate: select this_.id as id1_0_0_, this_.confirmation as confirma2_0_0_, this_.hashpass as hashpass3_0_0_, this_.mail as mail4_0_0_, this_.name as name5_0_0_ from User this_ where (this_.hashpass=? and this_.name=?)
+ContentType  :text/xml; charset=UTF-8
+request:  <request><closeSession> <sessionId>db938f652b6ae6037ba6e3d5ed5d536a</sessionId></closeSession></request>
+ContentType  :text/xml; charset=UTF-8
+request:  <request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+User{name=YuriPanasenco, mail=null, hashPass=12345, confirmation=null, acounts=[], fixingsAcounts=[], goals=[], planToDay=[]}
+Hibernate: select this_.id as id1_0_0_, this_.confirmation as confirma2_0_0_, this_.hashpass as hashpass3_0_0_, this_.mail as mail4_0_0_, this_.name as name5_0_0_ from User this_ where (this_.hashpass=? and this_.name=?)
+ContentType  :text/xml; charset=UTF-8
+request:  <request><closeSession> <sessionId>1e7d9b53acd1eb99db6af9d1f3c21828</sessionId></closeSession></request>
