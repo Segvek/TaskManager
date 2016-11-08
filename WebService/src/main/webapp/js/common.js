@@ -1,14 +1,3 @@
-// $(window).scroll(function() {
-// 	var st=$(this).scrollTop();
-// 	$(".navb").css({
-// 		'background': 'rgba(0, 0, 0, .5)'
-// 	});
-// 	if(0==st>100){
-// 		$(".navb").css({
-// 		'background': 'rgba(0, 0, 0, .5)'
-// 		});
-// 	}
-// });
 
 $(document).ready(function(){
 	//header slider
