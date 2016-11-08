@@ -71,10 +71,8 @@ public class GlobalParserImpl extends DefaultHandler implements GlobalParser {
 
     @Override
     public String getResponce() throws Exception {
-        String title = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-                + "<responce xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance "
-                + "xsi:noNamespaceSchemaLocation='APIResponсe.xsd'>\n";
-        String end = "\n</responce>";
+        String title = "<responce>";
+        String end = "</responce>";
         return title + responce + end;
     }
 }

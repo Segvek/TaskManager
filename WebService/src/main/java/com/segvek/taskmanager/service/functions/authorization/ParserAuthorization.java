@@ -1,15 +1,15 @@
 package com.segvek.taskmanager.service.functions.authorization;
 
+import com.segvek.taskmanager.service.functions.FunctionHandler;
 import com.segvek.taskmanager.service.model.User;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
 
 /**
  *
  * @author Panas
  */
-public class ParserAuthorization extends DefaultHandler {
+public class ParserAuthorization extends FunctionHandler {
 
     private String name, hashPass;
     

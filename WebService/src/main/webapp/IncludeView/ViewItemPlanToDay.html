@@ -1,0 +1,21 @@
+<tr>
+    <td>{nomer}</td>
+    <td>{name}</td>
+    <td><a href="#" onclick="GoToItemPlanGoal({idplangoal});">{plangoal}</a></td>
+    <td>
+        <div class="btn-row">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary {active1}" onclick="setStatutIttemPlanToDay({idplanToDay}, 1);">
+                    <input type="radio" name="options" id="option1"><i class="glyphicon glyphicon-play-circle"></i>
+                </label>
+                <label class="btn btn-primary {active2}" onclick="setStatutIttemPlanToDay({idplanToDay}, 2);">
+                    <input type="radio" name="options" id="option2"> <i class="glyphicon glyphicon-refresh"></i>
+                </label>
+                <label class="btn btn-primary {active3}" onclick="setStatutIttemPlanToDay({idplanToDay}, 3);">
+                    <input type="radio" name="options" id="option3"> <i class="glyphicon glyphicon-ok"></i>
+                </label>
+            </div>
+        </div>
+
+    </td>
+</tr>

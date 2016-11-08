@@ -9,4 +9,21 @@
     <registration>
         <sessionId>uyt6457f78675s5eretfuyg</sessionId>
     </registration>
+    
+    <userState>
+        <login>PanasenoYuri</login>
+        <MailState>0</MailState> <!--0-false 1-true-->
+        <countMessage>2</countMessage>
+        <dataRegistration>05.11.2016</dataRegistration>
+    </userState>
+    
+    <palnToDay>
+        <item>
+            <id>1fdgb</id>
+            <name>fererb</name>
+            <idGlobalItemPLan>345</idGlobalItemPLan>
+            <nameGlobalItemPlan>rfegthyrtehj5yr</nameGlobalItemPlan>
+            <state>2</state>
+        </item>
+    </palnToDay>
 </responce>

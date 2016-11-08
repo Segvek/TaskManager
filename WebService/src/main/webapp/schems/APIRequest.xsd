@@ -42,7 +42,7 @@
                     </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="user"/>
+                            <xs:element name="sessionId"/>
                             <xs:element name="name"/>
                             <xs:element name="anotation"/>
                             <xs:element name="beginDate"/>
@@ -57,7 +57,7 @@
                                                     <xs:element name="name"/>
                                                     <xs:element name="beginDate"/> 
                                                     <xs:element name="endDate"/>
-                                                    <xs:element minOccurs="0" name="acount"/>
+                                                    <xs:element minOccurs="0" name="idAcount"/>
                                                 </xs:all>
                                             </xs:complexType>
                                         </xs:element>
@@ -67,7 +67,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="createPlanToDay" minOccurs="0">
+<!--                <xs:element name="createPlanToDay" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>
                             Данная функция предназначена для создания цели авторизированым пользователем
@@ -110,7 +110,7 @@
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
-                </xs:element>
+                </xs:element>-->
                 <xs:element name="confirmation" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>
@@ -120,6 +120,42 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="key"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="closeSession" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Данная функция предназначена для завершения сесии пользователя который хочет выйти из акаунта
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sessionId"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="userState" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Данная функция предназначена для Отображения текущего состояния пользовательского акаунта
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sessionId"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="palnToDay" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Данная функция предназначена для Отображения плана на сегодня
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sessionId"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

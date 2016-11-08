@@ -47,7 +47,6 @@ public class AuthorizationFunction implements Function {
 //        }
 
         //проверка пользователя должна быть здесь
-        System.out.println(user);
         org.hibernate.Session sessiondao = HibernateUtil.getSessionFactory().openSession();
         List<User> users =sessiondao.createCriteria(User.class).add(Example.create(user)).list();
         sessiondao.close();

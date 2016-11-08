@@ -8,6 +8,8 @@
             <xs:all>
                 <xs:element name="authorization" type="Authorization" minOccurs="0"/>
                 <xs:element name="registration" type="Registration" minOccurs="0"/>
+                <xs:element name="userState" type="UserState" minOccurs="0"/>
+                <xs:element name="error" minOccurs="0"/>
                 <!--сюда добавлять новые функции-->
             </xs:all>
         </xs:complexType>
@@ -34,6 +36,18 @@
         </xs:annotation>
         <xs:sequence>
             <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="UserState">
+        <xs:annotation>
+            <xs:documentation>
+                Этот елемент содержит информацию о пользователе на текущий момент
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="login" type="xs:string"/>
+            <xs:element name="MailState" type="xs:string"/>
+            <xs:element name="countMessage" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
