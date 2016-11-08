@@ -1,0 +1,78 @@
+<section class="content-header">
+    <h1>
+        Новая цель
+        <small><a onclick="clickLinkMain();" href="#">главная</a> > <a onclick="clickLinkMain();" href="#">цели</a> > <a onclick="clickLinkMain();" href="#">создать</a></small>
+    </h1>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <!-- timeline item -->
+                    <li>
+                        <i class="glyphicon glyphicon-asterisk bg-blue"></i>
+                        <div class="timeline-item">
+                            <span class="time">шаг 1</span>
+                            <h3 class="timeline-header">Параментры цели</h3>
+                            <div class="timeline-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nameNewGoal">Название цели</label>
+                                        <input type="text" class="form-control" id="nameNewGoal">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Краткое описание цели</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter ..." id="shortAnotetionGoal" ></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Дата планируемого начала:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="beginDatePlan">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Дата планируемого достижения:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="endDatePlan">
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="#CreatePlanToGoal" class="btn btn-primary">Далее</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- timeline item -->
+                    <li>
+                        <a name="CreatePlanToGoal"></a>
+                        <i class="glyphicon glyphicon-asterisk bg-blue"></i>
+                        <div class="timeline-item">
+                            <span class="time">шаг 2</span>
+                            <h3 class="timeline-header">Создание плана достижения цели</h3>
+                            <div class="timeline-body">
+
+                                <table class="table table-condensed">
+                                    <tbody id="tableItemsPlan">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box-footer">
+                                <a onclick="createNewGoal();" class="btn btn-primary">Создать цель</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

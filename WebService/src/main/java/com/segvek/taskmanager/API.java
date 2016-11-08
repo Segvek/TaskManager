@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package com.segvek.taskmanager;
 
 import com.segvek.taskmanager.service.ParserManager;
 import com.segvek.taskmanager.service.util.InputStreamUtil;
@@ -12,21 +8,22 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.apache.log4j.Logger;
 
 /**
  *
  * @author Panas
  */
 public class API extends HttpServlet {
-
+    
+    final static Logger logger = Logger.getLogger(API.class);
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println("ContentType  :"+request.getContentType());
         if (request.getContentType() != null && request.getContentType().equals("text/xml; charset=UTF-8")) {
             response.setContentType("text/xml;charset=UTF-8");
             String xmlRequest = InputStreamUtil.readInputStrean(request.getInputStream());
-            System.out.println("request:  "+xmlRequest);
+            logger.info("request |" + request.getRemoteAddr()+"|"+xmlRequest);
             String xmlResponse = "error";
             try {
 
@@ -37,6 +34,7 @@ public class API extends HttpServlet {
             } catch (Exception ex) {
                 response.getWriter().print("erorrrrruyjhgf");
             }
+            logger.info("responce|" + request.getRemoteAddr()+ "|"+xmlResponse);
             response.getWriter().print(xmlResponse);
             return;
         } else {

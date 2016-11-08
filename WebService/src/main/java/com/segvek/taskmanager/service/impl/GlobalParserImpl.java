@@ -71,8 +71,8 @@ public class GlobalParserImpl extends DefaultHandler implements GlobalParser {
 
     @Override
     public String getResponce() throws Exception {
-        String title = "<responce>\n";
-        String end = "\n</responce>";
+        String title = "<responce>";
+        String end = "</responce>";
         return title + responce + end;
     }
 }

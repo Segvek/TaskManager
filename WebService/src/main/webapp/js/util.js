@@ -1,3 +1,5 @@
+//athor - Yuri Panasenco
+
 // возвращает cookie с именем name, если есть, если нет, то undefined
 function getCookie(name) {
   var matches = document.cookie.match(new RegExp(
@@ -11,6 +13,7 @@ function deleteCookie(name) {
     expires: -1
   })
 }
+
 
 function setCookie(name, value, options) {
   options = options || {};
@@ -40,3 +43,8 @@ function setCookie(name, value, options) {
 
   document.cookie = updatedCookie;
 }
+
+//функция замені подстрок
+String.prototype.replaceAll=function(find, replace_to){
+    return this.replace(new RegExp(find, "g"), replace_to);
+};

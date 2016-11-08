@@ -1,3 +1,5 @@
+//athor - Yuri Panasenco
+
 var xmlhttp;
 try {
     xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
@@ -44,7 +46,7 @@ var View = function (url) {
         htmlview=mapView.get(url);
     }
     this.setAttribut = function (name, value) {
-        htmlview = htmlview.replace("{" + name + "}", value);
+        htmlview = htmlview.replaceAll("{" + name + "}", value);
     }
     this.getHTML = function () {
         return htmlview;

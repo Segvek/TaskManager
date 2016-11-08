@@ -40,10 +40,12 @@
                 <name>Накопить 5 тыс. доларов</name>
                 <beginDate>01.09.2016</beginDate>
                 <endDate>01.07.2018</endDate>
-                <acount>4</acount>
+                <idAcount>4</idAcount>
             </item>
         </plan>
     </createGoal>
+    <createGoal><sessionId>e3975b93c5af253c61c65724b5227183</sessionId><name>Америка</name><anotation>Я себусь в Америку</anotation><beginDate>11/01/2016</beginDate><endDate>11/30/2016</endDate><plan><item><number>0</number><name>подцель 1</name><beginDate>11/01/2016</beginDate><endDate>11/08/2016</endDate><idAcount>4</idAcount></item><item><number>1</number><name>подцель 2</name><beginDate>11/08/2016</beginDate><endDate>11/15/2016</endDate><idAcount>4</idAcount></item><item><number>2</number><name>подцель 3</name><beginDate>11/15/2016</beginDate><endDate>11/29/2016</endDate><idAcount>4</idAcount></item></plan></createGoal>
+    
     
     <!--пример запроса на содание плана на завтра-->
 <!--    <createPlanToDay>
@@ -69,4 +71,13 @@
     <closeSession>
         <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
     </closeSession>
+    
+    <userState>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+    </userState>
+    
+    <palnToDay>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+    </palnToDay>
+    
 </request>

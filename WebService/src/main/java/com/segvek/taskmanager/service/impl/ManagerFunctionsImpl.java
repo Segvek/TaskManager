@@ -7,6 +7,7 @@ import com.segvek.taskmanager.service.functions.authorization.AuthorizationFunct
 import com.segvek.taskmanager.service.functions.closeSession.CloseSessionFunctionManager;
 import com.segvek.taskmanager.service.functions.registration.FunctionConfirmationRegistrationManager;
 import com.segvek.taskmanager.service.functions.registration.RegistrationFunctionManager;
+import com.segvek.taskmanager.service.functions.userState.UserStateFunctionManager;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -31,6 +32,7 @@ public class ManagerFunctionsImpl implements ManagerFunctions {
         managersFunction.add(new RegistrationFunctionManager());
         managersFunction.add(new FunctionConfirmationRegistrationManager());
         managersFunction.add(new CloseSessionFunctionManager());
+        managersFunction.add(new UserStateFunctionManager());
     }
 
     @Override

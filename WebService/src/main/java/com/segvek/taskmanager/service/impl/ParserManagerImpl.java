@@ -32,7 +32,7 @@ public class ParserManagerImpl implements ParserManager {
      */
     public String parse(String xml) {
         if (!XMLUtils.validateXMLByXSD(xml, "http://localhost:8080/WebService//schems/APIRequest.xsd")) {
-            return "<error>error load schem requesrAPI.xsd<error>";
+            return "<error>error valid(load) schem requesrAPI.xsd</error>";
             /*<TODO> здесь необходимо сделать настройку из файла конфигурации 
             автоматическую настройку порта**/
         }

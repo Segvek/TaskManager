@@ -6,16 +6,24 @@
 	 version="3.1">
     <servlet>
         <servlet-name>API</servlet-name>
-        <servlet-class>API</servlet-class>
+        <servlet-class>com.segvek.taskmanager.API</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>API</servlet-name>
         <url-pattern>/API</url-pattern>
     </servlet-mapping>
 
-     <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.ico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
     </servlet-mapping>
     
     <session-config>
