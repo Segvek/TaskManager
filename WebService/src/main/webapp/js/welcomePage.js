@@ -24,15 +24,46 @@ var authorization = function () {
     requestSender("API", request, function (xmlResponce) {
         let xml = $.parseXML(xmlResponce);
         if (xml.getElementsByTagName('error').length != 0) {
-            page.innerHTML += xml.getElementsByTagName('error')[0].innerHTML;
+            $('#form-autorithation [type="text"], #form-autorithation [type="password"]').css('boxShadow', '0px 0px 10px red');
             return;
         }
-        let $test = $(xml).find('sessionId');
-        document.cookie = "sessionID=" + $test.text();
+        document.cookie = "sessionID=" + $(xml).find('sessionId').text();
         isAuthorization();
     });
 }
 
+//Функция обработчи события нажатия кнопки регистрация
+var registration = function () {
+    let page = document.getElementById("page");
+    let login = document.getElementById("login-registration").value;
+    let mail = document.getElementById("mail-registration").value;
+    let password = document.getElementById("password-registration").value;
+    let repeatPassword = document.getElementById("repeat-password-registration").value;
+    
+    if(password != repeatPassword){
+        $('#form-registration [type="password"]').css('boxShadow', '0px 0px 10px red');
+        return;
+    }
+    
+    let request = 
+        "<request>\
+            <registration>\
+                <name>" + login + "</name>\
+                <mail>" + mail + "</mail>\
+                <hashPass>" + password + "</hashPass>\
+            </registration>\
+        </request>";
+    
+    requestSender("API", request, function (xmlResponce) {
+        let xml = $.parseXML(xmlResponce);
+        if (xml.getElementsByTagName('error').length != 0) {
+            $('#form-autorithation [type="text"], #form-autorithation [type="password"]').css('boxShadow', '0px 0px 10px red');
+            return;
+        }
+        document.cookie = "sessionID=" + $(xml).find('sessionId').text();
+        isAuthorization();
+    });
+}
 //функция выполняется в случае если пользователь авторизирован 
 function isAuthorization() {
     userPageCarcas();
@@ -41,30 +72,26 @@ function isAuthorization() {
 
 function disigneWelcomPage() {
     //header slider
-    console.log('dwad');
-    var Slide = ['/img/1.jpg', '/img/2.jpg', '/img/3.jpg', '/img/4.jpg', '/img/5.jpg'];
+    var Slide = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg'];
     var FirstSlide = 0;
     var Temp = 0;
     var LastSlide = 4;
     $('header').css('background', 'url('+ Slide[Temp] +'), #607d8b');
-    $('header').css('background-size', 'cover');
-    $('header').css('background-position', 'centr');
+    $('header').css('backgroundSize', 'cover');
     function ForwardSlide(){
             if(Temp == LastSlide){
                     Temp = FirstSlide;
             }else(Temp++)
 
-            $('header').animate({opacity: 'toggle'}, 600);
-            $('header').animate({opacity: 'toggle'}, 600);
-
+            $('.welcome-page header').animate({opacity: 'toggle'}, 500);
             $('header').css('background', 'url('+ Slide[Temp] +'), #607d8b');
-            $('header').css('background-size', 'cover');
-            $('header').css('background-position', 'centr');
+            $('header').css('backgroundSize', 'cover');
+            $('.welcome-page header').animate({opacity: 'toggle'}, 500);
     }
 
     setInterval(function(){
             ForwardSlide();
-    },10000);
+    },6000);
 
 
     //		Открытие формы Входа
@@ -85,11 +112,26 @@ function disigneWelcomPage() {
     $('#out p').click(function(){
             $('#out').css('display', 'none');
     });
+            
 
+//    $('#form-registration [type="submit"]').click(function(){
+//        let login = $('#form-out .name').val();
+//        let email = $('#form-out .email').val();
+//        let password = $('#form-out .password').val();
+//        let errorRegister = [];
+//        //alert(login);
+//        if(login == ''){
+//            errorRegister += 'Заполните поле логине';
+//        }
+//        if(email == ''){
+//            errorRegister += 'Заполните поле почты';
+//        }
+//        if(password == ''){
+//            errorRegister += 'Заполните поле пароль';
+//        }
+//        alert(errorRegister);
+//    });
 
-    // dich kakayato
-    $('#but1').click(function(){
-            //location.href = '/home.html';
-    });
+    
 
 }

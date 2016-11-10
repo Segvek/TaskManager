@@ -9,6 +9,7 @@
         <mail>Panasenco@outlook.com</mail>
         <hashPass>12345</hashPass>
     </registration>    
+    
         
     <!--Пример запроса на авторизацию-->
     <authorization>

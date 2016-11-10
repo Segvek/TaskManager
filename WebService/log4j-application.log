@@ -1878,3 +1878,649 @@
 2016-11-07 20:03:55|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
 2016-11-07 20:03:55|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>e3975b93c5af253c61c65724b5227183</sessionId></palnToDay></request>
 2016-11-07 20:03:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 22:48:22|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 22:48:22|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-08 22:48:22|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-08 22:48:22|INFO |HHH000206: hibernate.properties not found
+2016-11-08 22:48:22|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-08 22:48:22|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-08 22:48:22|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-08 22:48:22|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-08 22:48:22|INFO |HHH000041: Configured SessionFactory: null
+2016-11-08 22:48:22|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-08 22:48:22|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-08 22:48:22|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-08 22:48:22|INFO |HHH000006: Autocommit mode: false
+2016-11-08 22:48:22|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-08 22:48:23|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-08 22:48:23|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-08 22:48:23|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-08 22:48:23|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-08 22:48:24|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-08 22:48:24|INFO |HHH000102: Fetching database metadata
+2016-11-08 22:48:24|INFO |HHH000396: Updating schema
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: User
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: fixing_acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: fixing_hash_acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: goal
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: item_goal_plan
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: item_plan_to_day
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: plan_to_day
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: User
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: fixing_acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: fixing_hash_acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: goal
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: item_goal_plan
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: item_plan_to_day
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: plan_to_day
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: User
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: fixing_acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: fixing_hash_acount
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: goal
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: item_goal_plan
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: item_plan_to_day
+2016-11-08 22:48:24|INFO |HHH000262: Table not found: plan_to_day
+2016-11-08 22:48:27|INFO |HHH000232: Schema update complete
+2016-11-08 22:48:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 22:49:36|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 22:49:37|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-08 22:49:37|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-08 22:49:37|INFO |HHH000206: hibernate.properties not found
+2016-11-08 22:49:37|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-08 22:49:37|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-08 22:49:37|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-08 22:49:37|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-08 22:49:37|INFO |HHH000041: Configured SessionFactory: null
+2016-11-08 22:49:37|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-08 22:49:37|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-08 22:49:37|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-08 22:49:37|INFO |HHH000006: Autocommit mode: false
+2016-11-08 22:49:37|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-08 22:49:37|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-08 22:49:38|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-08 22:49:38|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-08 22:49:38|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-08 22:49:38|INFO |HHH000227: Running hbm2ddl schema export
+2016-11-08 22:49:43|INFO |HHH000230: Schema export complete
+2016-11-08 22:49:43|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 23:08:33|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:08:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 23:08:35|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:08:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 23:08:36|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:08:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 23:10:49|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:10:49|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 23:11:31|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:11:32|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-08 23:11:32|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-08 23:11:32|INFO |HHH000206: hibernate.properties not found
+2016-11-08 23:11:32|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-08 23:11:32|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-08 23:11:32|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-08 23:11:32|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-08 23:11:32|INFO |HHH000041: Configured SessionFactory: null
+2016-11-08 23:11:32|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-08 23:11:32|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-08 23:11:32|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-08 23:11:32|INFO |HHH000006: Autocommit mode: false
+2016-11-08 23:11:32|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-08 23:11:32|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-08 23:11:32|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-08 23:11:32|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-08 23:11:33|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-08 23:11:33|INFO |HHH000227: Running hbm2ddl schema export
+2016-11-08 23:11:39|INFO |HHH000230: Schema export complete
+2016-11-08 23:11:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-08 23:17:56|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:17:56|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-08 23:17:56|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-08 23:17:56|INFO |HHH000206: hibernate.properties not found
+2016-11-08 23:17:56|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-08 23:17:56|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-08 23:17:56|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-08 23:17:56|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-08 23:17:56|INFO |HHH000041: Configured SessionFactory: null
+2016-11-08 23:17:57|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-08 23:17:57|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-08 23:17:57|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-08 23:17:57|INFO |HHH000006: Autocommit mode: false
+2016-11-08 23:17:57|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-08 23:17:57|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-08 23:17:57|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-08 23:17:57|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-08 23:17:57|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-08 23:17:58|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-08 23:17:58|INFO |HHH000102: Fetching database metadata
+2016-11-08 23:17:58|INFO |HHH000396: Updating schema
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [mail, name, id, confirmation, hashpass]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: []
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-08 23:17:58|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-08 23:17:58|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-08 23:17:58|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-08 23:17:58|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-08 23:17:58|INFO |HHH000232: Schema update complete
+2016-11-08 23:17:58|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>060464f937a0d8368fe13eb715909294</sessionId></authorization></responce>
+2016-11-08 23:17:58|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:17:58|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:17:58|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:17:58|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:18:29|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:18:29|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:18:29|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:18:29|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:18:30|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:18:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:18:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:18:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:18:31|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:18:31|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:18:32|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:18:32|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:18:34|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:18:34|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:34:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:34:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:34:45|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:34:45|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:34:45|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:34:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:34:46|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:34:46|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:34:46|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:34:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:34:52|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:34:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:34:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:34:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:34:53|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>060464f937a0d8368fe13eb715909294</sessionId></userState></request>
+2016-11-08 23:34:53|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:34:53|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:34:53|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:34:53|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>060464f937a0d8368fe13eb715909294</sessionId></palnToDay></request>
+2016-11-08 23:34:53|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-08 23:35:12|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-08 23:35:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>eac1ed149bca848272c95b9800066255</sessionId></authorization></responce>
+2016-11-08 23:35:12|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>eac1ed149bca848272c95b9800066255</sessionId></userState></request>
+2016-11-08 23:35:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-08 23:35:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>eac1ed149bca848272c95b9800066255</sessionId></palnToDay></request>
+2016-11-08 23:35:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:11:50|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>eac1ed149bca848272c95b9800066255</sessionId></closeSession></request>
+2016-11-09 01:11:50|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-09 01:33:05|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-09 01:33:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></authorization></responce>
+2016-11-09 01:33:05|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></userState></request>
+2016-11-09 01:33:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:33:05|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></palnToDay></request>
+2016-11-09 01:33:05|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:33:50|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></userState></request>
+2016-11-09 01:33:50|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:33:50|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></palnToDay></request>
+2016-11-09 01:33:50|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:34:25|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></userState></request>
+2016-11-09 01:34:25|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:34:25|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>c36d72db503a5f8919efca9f19b0c10f</sessionId></palnToDay></request>
+2016-11-09 01:34:25|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:34:31|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-09 01:34:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>10daa99104171723765828c7c31e757d</sessionId></authorization></responce>
+2016-11-09 01:34:31|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:34:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:34:31|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:34:31|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:34:36|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:34:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:34:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:34:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:35:36|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-09 01:35:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>892edfed441e6e0e7fa7f8ddd2d8adc2</sessionId></authorization></responce>
+2016-11-09 01:35:36|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>892edfed441e6e0e7fa7f8ddd2d8adc2</sessionId></userState></request>
+2016-11-09 01:35:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:35:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>892edfed441e6e0e7fa7f8ddd2d8adc2</sessionId></palnToDay></request>
+2016-11-09 01:35:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:36:21|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:36:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:36:21|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:36:21|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:36:24|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:36:24|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:36:24|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:36:24|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:36:55|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-09 01:36:55|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>4e6f97f67c6b944b4a91bc3c354da7af</sessionId></authorization></responce>
+2016-11-09 01:36:55|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>4e6f97f67c6b944b4a91bc3c354da7af</sessionId></userState></request>
+2016-11-09 01:36:55|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:36:55|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>4e6f97f67c6b944b4a91bc3c354da7af</sessionId></palnToDay></request>
+2016-11-09 01:36:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:37:11|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>4e6f97f67c6b944b4a91bc3c354da7af</sessionId></userState></request>
+2016-11-09 01:37:11|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:37:11|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>4e6f97f67c6b944b4a91bc3c354da7af</sessionId></palnToDay></request>
+2016-11-09 01:37:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:37:41|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:37:41|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:37:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:37:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:38:23|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:38:23|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:38:23|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:38:23|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:38:25|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:38:25|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:38:26|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:38:26|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:38:26|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:38:26|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:38:27|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>10daa99104171723765828c7c31e757d</sessionId></userState></request>
+2016-11-09 01:38:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-09 01:38:27|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:38:27|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-09 01:38:28|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>10daa99104171723765828c7c31e757d</sessionId></palnToDay></request>
+2016-11-09 01:38:28|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:43:54|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 21:43:55|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 21:43:55|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-10 21:43:55|INFO |HHH000206: hibernate.properties not found
+2016-11-10 21:43:55|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-10 21:43:55|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-10 21:43:55|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-10 21:43:55|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-10 21:43:55|INFO |HHH000041: Configured SessionFactory: null
+2016-11-10 21:43:55|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 21:43:55|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-10 21:43:55|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 21:43:55|INFO |HHH000006: Autocommit mode: false
+2016-11-10 21:43:55|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 21:43:55|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-10 21:43:56|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 21:43:56|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 21:43:56|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-10 21:43:57|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-10 21:43:57|INFO |HHH000102: Fetching database metadata
+2016-11-10 21:43:57|INFO |HHH000396: Updating schema
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [mail, name, id, confirmation, hashpass]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: []
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [primary]
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-10 21:43:57|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-10 21:43:57|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-10 21:43:57|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-10 21:43:57|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-10 21:43:57|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-10 21:43:57|INFO |HHH000232: Schema update complete
+2016-11-10 21:43:57|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>c8f7e5f81ba3ba0e2a16ccb4106561b4</sessionId></authorization></responce>
+2016-11-10 21:43:57|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></authorization></responce>
+2016-11-10 21:43:57|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:43:57|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:43:57|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:43:57|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:47:20|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:47:20|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:47:20|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:47:20|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:47:48|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:47:48|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:47:48|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:47:48|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:47:50|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:47:50|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:47:50|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:47:50|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:48:13|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:48:13|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:48:13|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:48:13|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:48:15|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:48:15|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:48:17|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:48:17|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:48:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:48:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:48:18|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:48:18|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:48:18|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:48:18|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:48:21|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></userState></request>
+2016-11-10 21:48:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:48:21|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>1be54c8ff3b638a0716296198ea5f655</sessionId></palnToDay></request>
+2016-11-10 21:48:21|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:54:30|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 21:54:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>9bc862129e46a965ac21b582305affbb</sessionId></authorization></responce>
+2016-11-10 21:54:30|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>9bc862129e46a965ac21b582305affbb</sessionId></userState></request>
+2016-11-10 21:54:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 21:54:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>9bc862129e46a965ac21b582305affbb</sessionId></palnToDay></request>
+2016-11-10 21:54:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 21:54:33|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>9bc862129e46a965ac21b582305affbb</sessionId></closeSession></request>
+2016-11-10 21:54:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:23:00|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:23:00|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>360451c59539b877670ff6b6953dfc11</sessionId></authorization></responce>
+2016-11-10 22:23:00|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>360451c59539b877670ff6b6953dfc11</sessionId></userState></request>
+2016-11-10 22:23:00|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:23:00|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>360451c59539b877670ff6b6953dfc11</sessionId></palnToDay></request>
+2016-11-10 22:23:00|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:23:02|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>360451c59539b877670ff6b6953dfc11</sessionId></closeSession></request>
+2016-11-10 22:23:02|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:23:06|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:23:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>dfa7b0f16833501c7a39b175a3d6079d</sessionId></authorization></responce>
+2016-11-10 22:23:06|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>dfa7b0f16833501c7a39b175a3d6079d</sessionId></userState></request>
+2016-11-10 22:23:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:23:06|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>dfa7b0f16833501c7a39b175a3d6079d</sessionId></palnToDay></request>
+2016-11-10 22:23:06|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:23:10|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>dfa7b0f16833501c7a39b175a3d6079d</sessionId></closeSession></request>
+2016-11-10 22:23:10|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:23:27|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:23:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>be96134c08a60d6a7fc255ea2b97cf53</sessionId></authorization></responce>
+2016-11-10 22:23:27|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>be96134c08a60d6a7fc255ea2b97cf53</sessionId></userState></request>
+2016-11-10 22:23:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:23:27|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>be96134c08a60d6a7fc255ea2b97cf53</sessionId></palnToDay></request>
+2016-11-10 22:23:27|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:23:31|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>be96134c08a60d6a7fc255ea2b97cf53</sessionId></palnToDay></request>
+2016-11-10 22:23:31|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:23:40|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>be96134c08a60d6a7fc255ea2b97cf53</sessionId></closeSession></request>
+2016-11-10 22:23:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:24:56|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:24:56|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>d11cfa8b875178204906d1d5d55c32f0</sessionId></authorization></responce>
+2016-11-10 22:24:56|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>d11cfa8b875178204906d1d5d55c32f0</sessionId></userState></request>
+2016-11-10 22:24:56|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:24:56|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>d11cfa8b875178204906d1d5d55c32f0</sessionId></palnToDay></request>
+2016-11-10 22:24:56|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:26:08|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>d11cfa8b875178204906d1d5d55c32f0</sessionId></userState></request>
+2016-11-10 22:26:08|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:26:09|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>d11cfa8b875178204906d1d5d55c32f0</sessionId></palnToDay></request>
+2016-11-10 22:26:09|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:27:23|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:27:23|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>185bc10fea3bed8c7c7c6a97702815bd</sessionId></authorization></responce>
+2016-11-10 22:27:23|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>185bc10fea3bed8c7c7c6a97702815bd</sessionId></userState></request>
+2016-11-10 22:27:23|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:27:23|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>185bc10fea3bed8c7c7c6a97702815bd</sessionId></palnToDay></request>
+2016-11-10 22:27:23|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:27:33|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>185bc10fea3bed8c7c7c6a97702815bd</sessionId></closeSession></request>
+2016-11-10 22:27:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:30:42|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:30:42|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>614704b622f38d1ad2f71f821ef9c886</sessionId></authorization></responce>
+2016-11-10 22:30:42|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>614704b622f38d1ad2f71f821ef9c886</sessionId></userState></request>
+2016-11-10 22:30:42|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:30:42|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>614704b622f38d1ad2f71f821ef9c886</sessionId></palnToDay></request>
+2016-11-10 22:30:42|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:30:44|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>614704b622f38d1ad2f71f821ef9c886</sessionId></closeSession></request>
+2016-11-10 22:30:44|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:34:21|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenc????o</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:34:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:34:22|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:34:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>25fe0c95380da015a7a64b0e688638e5</sessionId></authorization></responce>
+2016-11-10 22:34:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>25fe0c95380da015a7a64b0e688638e5</sessionId></userState></request>
+2016-11-10 22:34:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:34:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>25fe0c95380da015a7a64b0e688638e5</sessionId></palnToDay></request>
+2016-11-10 22:34:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:34:24|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>25fe0c95380da015a7a64b0e688638e5</sessionId></closeSession></request>
+2016-11-10 22:34:24|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:34:26|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco????????</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:34:26|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:34:31|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco??????????</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:34:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:34:46|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco??</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:34:46|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:34:49|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:34:49|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>41eb882993299ba324b3376dc1c807aa</sessionId></authorization></responce>
+2016-11-10 22:34:49|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>41eb882993299ba324b3376dc1c807aa</sessionId></userState></request>
+2016-11-10 22:34:49|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:34:49|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>41eb882993299ba324b3376dc1c807aa</sessionId></palnToDay></request>
+2016-11-10 22:34:49|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:34:51|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>41eb882993299ba324b3376dc1c807aa</sessionId></closeSession></request>
+2016-11-10 22:34:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:47:09|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:47:09|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>baba84f8d76505ab3e8e6c3b0f8ba381</sessionId></authorization></responce>
+2016-11-10 22:47:09|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>baba84f8d76505ab3e8e6c3b0f8ba381</sessionId></userState></request>
+2016-11-10 22:47:09|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:47:09|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>baba84f8d76505ab3e8e6c3b0f8ba381</sessionId></palnToDay></request>
+2016-11-10 22:47:09|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:47:11|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>baba84f8d76505ab3e8e6c3b0f8ba381</sessionId></closeSession></request>
+2016-11-10 22:47:11|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 22:51:56|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencoeweq</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:51:56|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:52:37|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>yagodkahru</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 22:52:37|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:53:30|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 22:53:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 22:56:30|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 22:56:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>455085f5897175316a4075550b6236fd</sessionId></authorization></responce>
+2016-11-10 22:56:30|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>455085f5897175316a4075550b6236fd</sessionId></userState></request>
+2016-11-10 22:56:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 22:56:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>455085f5897175316a4075550b6236fd</sessionId></palnToDay></request>
+2016-11-10 22:56:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 22:56:32|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>455085f5897175316a4075550b6236fd</sessionId></closeSession></request>
+2016-11-10 22:56:32|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 23:00:42|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345e3we</hashPass></authorization></request>
+2016-11-10 23:00:42|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:00:53|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345adw</hashPass></authorization></request>
+2016-11-10 23:00:53|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:01:34|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345wd</hashPass></authorization></request>
+2016-11-10 23:01:34|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:01:35|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345wd</hashPass></authorization></request>
+2016-11-10 23:01:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:01:46|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 23:01:46|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:01:47|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 23:01:47|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:02:22|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencodw</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:02:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:02:38|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 23:02:38|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:02:39|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 23:02:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:02:39|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 23:02:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:02:52|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencoawd</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:02:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:03:41|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencowad</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:03:41|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:03:57|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencoawd</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:03:57|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:03:58|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencoawd</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:03:58|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:08:18|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345awd</hashPass></authorization></request>
+2016-11-10 23:08:18|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:08:32|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencoewf</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:08:32|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:09:04|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasencoewf</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:09:04|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-10 23:09:19|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:09:19|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>561d6f79e1c359a2a74008ff208f3569</sessionId></authorization></responce>
+2016-11-10 23:09:19|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>561d6f79e1c359a2a74008ff208f3569</sessionId></userState></request>
+2016-11-10 23:09:19|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 23:09:19|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>561d6f79e1c359a2a74008ff208f3569</sessionId></palnToDay></request>
+2016-11-10 23:09:19|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 23:09:21|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>561d6f79e1c359a2a74008ff208f3569</sessionId></closeSession></request>
+2016-11-10 23:09:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 23:09:25|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:09:25|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>7e5156d97316d8515769dd8168815054</sessionId></authorization></responce>
+2016-11-10 23:09:25|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>7e5156d97316d8515769dd8168815054</sessionId></userState></request>
+2016-11-10 23:09:25|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-10 23:09:25|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>7e5156d97316d8515769dd8168815054</sessionId></palnToDay></request>
+2016-11-10 23:09:25|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-10 23:09:28|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>7e5156d97316d8515769dd8168815054</sessionId></closeSession></request>
+2016-11-10 23:09:28|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-10 23:11:34|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco<m>iyhj</m></name><hashPass>12345</hashPass></authorization></request>
+2016-11-10 23:11:35|INFO |responce|0:0:0:0:0:0:0:1|<error>error valid(load) schem requesrAPI.xsd</error>
+2016-11-11 00:20:28|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:29|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:30|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>124f4a2e7043eb8a1344afab85546794</sessionId></registration></responce>
+2016-11-11 00:20:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>99bfee3d67061bada137f68d999b9f07</sessionId></registration></responce>
+2016-11-11 00:20:30|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>547e02316be5050dd7f71089dffdd37d</sessionId></registration></responce>
+2016-11-11 00:20:31|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>30ff044c0f9fe99d23604fab7e543799</sessionId></registration></responce>
+2016-11-11 00:20:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>43b94b023072d0d03e0f2db0d01b5413</sessionId></registration></responce>
+2016-11-11 00:20:32|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:33|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>c4ff67b43a6efaaef478b1a53524c624</sessionId></registration></responce>
+2016-11-11 00:20:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>4a14719ef4b254dd305f7f12a873543f</sessionId></registration></responce>
+2016-11-11 00:20:34|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dima mail</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>32ea82b0cd9e6d3100cd430687b08e03</sessionId></registration></responce>
+2016-11-11 00:20:38|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dimaadw</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:39|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dimaadw</mail>                <hashPass>dcvbhy</hashPass>            </registration>        </request>
+2016-11-11 00:20:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>9e0da6c637623992834542c6509e41c5</sessionId></registration></responce>
+2016-11-11 00:20:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>4b9c21f901e89723ce58a807fcd62842</sessionId></registration></responce>
+2016-11-11 00:22:07|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Dima</name>                <mail>dimamail</mail>                <hashPass>qweqwe</hashPass>            </registration>        </request>
+2016-11-11 00:22:07|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>6ad7e1b6666852aedd2653d7d6747952</sessionId></registration></responce>
+2016-11-11 00:22:07|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>6ad7e1b6666852aedd2653d7d6747952</sessionId></userState></request>
+2016-11-11 00:22:07|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>Dima</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 00:22:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>6ad7e1b6666852aedd2653d7d6747952</sessionId></palnToDay></request>
+2016-11-11 00:22:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 00:22:37|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>6ad7e1b6666852aedd2653d7d6747952</sessionId></closeSession></request>
+2016-11-11 00:22:37|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 00:29:38|INFO |request |192.168.1.106|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 00:29:38|INFO |responce|192.168.1.106|<responce><authorization><sessionId>e2403d66a350a2161ae950b66e2e1027</sessionId></authorization></responce>
+2016-11-11 00:29:38|INFO |request |192.168.1.106|<request><userState><sessionId>e2403d66a350a2161ae950b66e2e1027</sessionId></userState></request>
+2016-11-11 00:29:38|INFO |responce|192.168.1.106|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 00:29:38|INFO |request |192.168.1.106|<request><palnToDay><sessionId>e2403d66a350a2161ae950b66e2e1027</sessionId></palnToDay></request>
+2016-11-11 00:29:38|INFO |responce|192.168.1.106|<responce></responce>
+2016-11-11 00:38:49|INFO |request |192.168.1.106|<request><userState><sessionId>e2403d66a350a2161ae950b66e2e1027</sessionId></userState></request>
+2016-11-11 00:38:49|INFO |responce|192.168.1.106|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 00:38:50|INFO |request |192.168.1.106|<request><palnToDay><sessionId>e2403d66a350a2161ae950b66e2e1027</sessionId></palnToDay></request>
+2016-11-11 00:38:50|INFO |responce|192.168.1.106|<responce></responce>
+2016-11-11 00:39:02|INFO |request |192.168.1.106|<request><closeSession> <sessionId>e2403d66a350a2161ae950b66e2e1027</sessionId></closeSession></request>
+2016-11-11 00:39:02|INFO |responce|192.168.1.106|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 00:39:17|INFO |request |192.168.1.106|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 00:39:17|INFO |responce|192.168.1.106|<responce><authorization><sessionId>38809b7c334807c279d12188b2d06710</sessionId></authorization></responce>
+2016-11-11 00:39:17|INFO |request |192.168.1.106|<request><userState><sessionId>38809b7c334807c279d12188b2d06710</sessionId></userState></request>
+2016-11-11 00:39:17|INFO |responce|192.168.1.106|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 00:39:17|INFO |request |192.168.1.106|<request><palnToDay><sessionId>38809b7c334807c279d12188b2d06710</sessionId></palnToDay></request>
+2016-11-11 00:39:17|INFO |responce|192.168.1.106|<responce></responce>
+2016-11-11 00:39:54|INFO |request |192.168.1.106|<request><closeSession> <sessionId>38809b7c334807c279d12188b2d06710</sessionId></closeSession></request>
+2016-11-11 00:39:54|INFO |responce|192.168.1.106|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 00:40:22|INFO |request |192.168.1.106|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 00:40:22|INFO |responce|192.168.1.106|<responce><authorization><sessionId>76edaa4bdab3efd43a93754c8494532c</sessionId></authorization></responce>
+2016-11-11 00:40:22|INFO |request |192.168.1.106|<request><userState><sessionId>76edaa4bdab3efd43a93754c8494532c</sessionId></userState></request>
+2016-11-11 00:40:22|INFO |responce|192.168.1.106|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 00:40:22|INFO |request |192.168.1.106|<request><palnToDay><sessionId>76edaa4bdab3efd43a93754c8494532c</sessionId></palnToDay></request>
+2016-11-11 00:40:22|INFO |responce|192.168.1.106|<responce></responce>
+2016-11-11 00:40:33|INFO |request |192.168.1.106|<request><closeSession> <sessionId>76edaa4bdab3efd43a93754c8494532c</sessionId></closeSession></request>
+2016-11-11 00:40:33|INFO |responce|192.168.1.106|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 01:03:17|INFO |request |192.168.1.211|<request><authorization><name></name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 01:03:17|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 01:03:17|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 01:03:17|INFO |HHH000206: hibernate.properties not found
+2016-11-11 01:03:17|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 01:03:17|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 01:03:17|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 01:03:17|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 01:03:17|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 01:03:17|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 01:03:17|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 01:03:17|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 01:03:17|INFO |HHH000006: Autocommit mode: false
+2016-11-11 01:03:17|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 01:03:18|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 01:03:18|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 01:03:18|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 01:03:18|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 01:03:19|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 01:03:19|INFO |HHH000102: Fetching database metadata
+2016-11-11 01:03:19|INFO |HHH000396: Updating schema
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [mail, name, id, confirmation, hashpass]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: []
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 01:03:19|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 01:03:19|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 01:03:19|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 01:03:19|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 01:03:19|INFO |HHH000232: Schema update complete
+2016-11-11 01:03:19|INFO |responce|192.168.1.211|<responce><authorization><sessionId>8d067b65a907ae087dc889099ae3e5ef</sessionId></authorization></responce>
+2016-11-11 01:03:19|INFO |request |192.168.1.211|<request><userState><sessionId>8d067b65a907ae087dc889099ae3e5ef</sessionId></userState></request>
+2016-11-11 01:03:20|INFO |responce|192.168.1.211|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:03:20|INFO |request |192.168.1.211|<request><palnToDay><sessionId>8d067b65a907ae087dc889099ae3e5ef</sessionId></palnToDay></request>
+2016-11-11 01:03:20|INFO |responce|192.168.1.211|<responce></responce>
+2016-11-11 01:03:22|INFO |request |192.168.1.211|<request><closeSession> <sessionId>8d067b65a907ae087dc889099ae3e5ef</sessionId></closeSession></request>
+2016-11-11 01:03:22|INFO |responce|192.168.1.211|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 01:03:24|INFO |request |192.168.1.211|<request>            <registration>                <name></name>                <mail></mail>                <hashPass></hashPass>            </registration>        </request>
+2016-11-11 01:03:26|INFO |responce|192.168.1.211|<responce><registration><sessionId>fd39ce18c5ecd9d6019ec34986223e4f</sessionId></registration></responce>
+2016-11-11 01:03:26|INFO |request |192.168.1.211|<request><userState><sessionId>fd39ce18c5ecd9d6019ec34986223e4f</sessionId></userState></request>
+2016-11-11 01:03:26|INFO |responce|192.168.1.211|<responce><userState><login>                </login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:03:26|INFO |request |192.168.1.211|<request><palnToDay><sessionId>fd39ce18c5ecd9d6019ec34986223e4f</sessionId></palnToDay></request>
+2016-11-11 01:03:26|INFO |responce|192.168.1.211|<responce></responce>
+2016-11-11 01:03:32|INFO |request |192.168.1.211|<request><closeSession> <sessionId>fd39ce18c5ecd9d6019ec34986223e4f</sessionId></closeSession></request>
+2016-11-11 01:03:32|INFO |responce|192.168.1.211|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 01:04:52|INFO |request |192.168.1.211|<request>            <registration>                <name>????</name>                <mail>didyk.dima@list.ru</mail>                <hashPass>qwe</hashPass>            </registration>        </request>
+2016-11-11 01:04:54|INFO |responce|192.168.1.211|<responce><registration><sessionId>5dde84feae0f636c505463b818cc99d7</sessionId></registration></responce>
+2016-11-11 01:04:54|INFO |request |192.168.1.211|<request><userState><sessionId>5dde84feae0f636c505463b818cc99d7</sessionId></userState></request>
+2016-11-11 01:04:54|INFO |responce|192.168.1.211|<responce><userState><login>????</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:04:54|INFO |request |192.168.1.211|<request><palnToDay><sessionId>5dde84feae0f636c505463b818cc99d7</sessionId></palnToDay></request>
+2016-11-11 01:04:54|INFO |responce|192.168.1.211|<responce></responce>

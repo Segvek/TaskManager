@@ -6,10 +6,7 @@
 	margin: 0 auto;
 }
 body, html, *{
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: #FFF;
-	margin: 0;
-	
+	font-family: 'Open Sans Condensed', sans-serif;	
 }
 body{
 	background: #ECF0F1;
@@ -25,7 +22,7 @@ ul{
 	margin: 0;
 	padding: 0;
 }
-header{
+.welcome-page>header{
 	min-height: 500px;
 	background-size: cover;
 	background-position: center;
@@ -96,6 +93,7 @@ header{
 	text-transform: uppercase;
 	transition: all .3s;
 	cursor: default;
+	color: #fff;
 }
 .nav-text:hover{
 	padding-left: 8px;
@@ -187,8 +185,8 @@ header{
 		transform: rotate(-135deg);
 	}
 }
-#form-in,
-#form-out{
+#form-autorithation,
+#form-registration{
 	width: 200px;
 	margin: 0 auto;
 	z-index: 9999;
