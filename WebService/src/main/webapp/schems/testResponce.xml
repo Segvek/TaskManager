@@ -10,14 +10,24 @@
         <sessionId>uyt6457f78675s5eretfuyg</sessionId>
     </registration>
     
+    <!--пример ответа на забпрос об информации пользователя-->
     <userState>
         <login>PanasenoYuri</login>
-        <MailState>0</MailState> <!--0-false 1-true-->
         <countMessage>2</countMessage>
         <dataRegistration>05.11.2016</dataRegistration>
+        <warnings>
+            <warning>
+                <content>fdgf</content>
+                <title>rdgf</title>
+            </warning>
+            <warning>
+                <content>srdgf</content>
+                <title>sdgf</title>
+            </warning>
+        </warnings>
     </userState>
     
-    <palnToDay>
+<!--    <palnToDay>
         <item>
             <id>1fdgb</id>
             <name>fererb</name>
@@ -25,5 +35,5 @@
             <nameGlobalItemPlan>rfegthyrtehj5yr</nameGlobalItemPlan>
             <state>2</state>
         </item>
-    </palnToDay>
+    </palnToDay>-->
 </responce>

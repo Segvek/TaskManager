@@ -46,8 +46,22 @@
         </xs:annotation>
         <xs:sequence>
             <xs:element name="login" type="xs:string"/>
-            <xs:element name="MailState" type="xs:string"/>
             <xs:element name="countMessage" type="xs:string"/>
+            <xs:element name="dataRegistration" />
+            <xs:element name="warnings" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="warning" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="title"/>
+                                    <xs:element name="content"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>

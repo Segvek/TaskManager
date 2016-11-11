@@ -12,7 +12,10 @@
   <Settings>
     <DbDiagramOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <EnableComments>false</EnableComments>
+      <TableCompartments>Indexes</TableCompartments>
+      <FieldDetails>Name</FieldDetails>
       <CustomProperties />
+      <GridEnabled>false</GridEnabled>
     </DbDiagramOptions>
     <Options xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PageOptions">
       <TopLeftMargins>
@@ -58,7 +61,7 @@
             </Location>
             <Size>
               <Width>178 px</Width>
-              <Height>144 px</Height>
+              <Height>127 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.acount</Path>
@@ -81,7 +84,7 @@
             </Location>
             <Size>
               <Width>155 px</Width>
-              <Height>127 px</Height>
+              <Height>110 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.fixing_acount</Path>
@@ -104,7 +107,7 @@
             </Location>
             <Size>
               <Width>194 px</Width>
-              <Height>144 px</Height>
+              <Height>127 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.fixing_hash_acount</Path>
@@ -129,8 +132,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>98.425 px</X>
-                  <Y>141.7 px</Y>
+                  <X>98 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Bottom</Align>
@@ -141,8 +144,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>89.425 px</X>
-                  <Y>1.02500000000001 px</Y>
+                  <X>89 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -168,8 +171,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-3.05175780113132E-06 px</X>
-                  <Y>-28.5 px</Y>
+                  <X>0 px</X>
+                  <Y>-37 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Bottom</Align>
@@ -198,8 +201,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>193.675 px</X>
-                  <Y>71.85 px</Y>
+                  <X>0 px</X>
+                  <Y>63 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -210,8 +213,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>-0.649999999999977 px</X>
-                  <Y>63.85 px</Y>
+                  <X>0 px</X>
+                  <Y>55 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -238,7 +241,7 @@
               <Port xsi:type="LinkPort">
                 <Location>
                   <X>-33.5 px</X>
-                  <Y>1.52587890056566E-06 px</Y>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -265,7 +268,7 @@
             </Location>
             <Size>
               <Width>175 px</Width>
-              <Height>178 px</Height>
+              <Height>161 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.goal</Path>
@@ -288,7 +291,7 @@
             </Location>
             <Size>
               <Width>172 px</Width>
-              <Height>195 px</Height>
+              <Height>178 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.item_goal_plan</Path>
@@ -313,8 +316,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>85.725 px</X>
-                  <Y>0.350000000000023 px</Y>
+                  <X>86 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -325,8 +328,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>88.725 px</X>
-                  <Y>178.025 px</Y>
+                  <X>89 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Bottom</Align>
@@ -352,8 +355,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-6.10351560226263E-06 px</X>
-                  <Y>30 px</Y>
+                  <X>0 px</X>
+                  <Y>38.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -382,11 +385,11 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0 px</X>
-                  <Y>98.775 px</Y>
+                  <X>43 px</X>
+                  <Y>0 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>23</OID>
                   <PortType>FloatAnchor</PortType>
@@ -394,11 +397,11 @@
               </Port>
               <Port>
                 <Location>
-                  <X>89.425 px</X>
-                  <Y>143.9 px</Y>
+                  <X>0 px</X>
+                  <Y>63.5 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
-                <Align>Bottom</Align>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
                 <CustomProperties>
                   <OID>24</OID>
                   <PortType>FloatAnchor</PortType>
@@ -407,8 +410,16 @@
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>138.425 px</X>
-                <Y>779.775 px</Y>
+                <X>337 px</X>
+                <Y>661 px</Y>
+              </PointD>
+              <PointD>
+                <X>247 px</X>
+                <Y>661 px</Y>
+              </PointD>
+              <PointD>
+                <X>247 px</X>
+                <Y>302.5 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -427,11 +438,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>155.574996948242 px</X>
-                  <Y>198.387487792969 px</Y>
+                  <X>90 px</X>
+                  <Y>199.25 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Left</Align>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>25</OID>
                   <PortType>FixedAnchor</PortType>
@@ -455,7 +466,7 @@
             </Location>
             <Size>
               <Width>221 px</Width>
-              <Height>195 px</Height>
+              <Height>178 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.item_plan_to_day</Path>
@@ -480,8 +491,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>-0.224999999999909 px</X>
-                  <Y>98.775 px</Y>
+                  <X>0 px</X>
+                  <Y>89 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -492,8 +503,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>171.45 px</X>
-                  <Y>98.775 px</Y>
+                  <X>0 px</X>
+                  <Y>89 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -520,7 +531,7 @@
               <Port xsi:type="LinkPort">
                 <Location>
                   <X>30 px</X>
-                  <Y>-2.44140625227374E-05 px</Y>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -547,7 +558,7 @@
             </Location>
             <Size>
               <Width>155 px</Width>
-              <Height>127 px</Height>
+              <Height>110 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.plan_to_day</Path>
@@ -572,8 +583,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>110.9 px</X>
-                  <Y>0.350000000000023 px</Y>
+                  <X>109.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -584,8 +595,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>78.9000000000001 px</X>
-                  <Y>126.55 px</Y>
+                  <X>77.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Bottom</Align>
@@ -611,8 +622,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-2.44140624090505E-05 px</X>
-                  <Y>152 px</Y>
+                  <X>0 px</X>
+                  <Y>160.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -639,7 +650,7 @@
             </Location>
             <Size>
               <Width>186 px</Width>
-              <Height>144 px</Height>
+              <Height>127 px</Height>
             </Size>
             <DbOid>
               <Path>webservicetaskmanager.user</Path>
@@ -664,8 +675,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>178.325 px</X>
-                  <Y>74.05 px</Y>
+                  <X>0 px</X>
+                  <Y>95.25 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -676,8 +687,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>-0.524999999999977 px</X>
-                  <Y>74.05 px</Y>
+                  <X>0 px</X>
+                  <Y>95.25 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -704,7 +715,7 @@
               <Port xsi:type="LinkPort">
                 <Location>
                   <X>-29 px</X>
-                  <Y>1.22070312045253E-05 px</Y>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -733,8 +744,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>78.725 px</X>
-                  <Y>127.35 px</Y>
+                  <X>77.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Bottom</Align>
@@ -745,8 +756,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>94.725 px</X>
-                  <Y>1.02500000000001 px</Y>
+                  <X>93.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -772,8 +783,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-6.10351560226263E-06 px</X>
-                  <Y>-33 px</Y>
+                  <X>0 px</X>
+                  <Y>-41.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Bottom</Align>
@@ -802,8 +813,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>88.725 px</X>
-                  <Y>0.225000000000023 px</Y>
+                  <X>87.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -814,8 +825,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>94.725 px</X>
-                  <Y>143.9 px</Y>
+                  <X>93.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Bottom</Align>
@@ -841,8 +852,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-6.10351560226263E-06 px</X>
-                  <Y>30 px</Y>
+                  <X>0 px</X>
+                  <Y>38.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -871,8 +882,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>-0.474999999999909 px</X>
-                  <Y>63.05 px</Y>
+                  <X>0 px</X>
+                  <Y>55 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -883,8 +894,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>186.8 px</X>
-                  <Y>74.05 px</Y>
+                  <X>0 px</X>
+                  <Y>66 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -911,7 +922,7 @@
               <Port xsi:type="LinkPort">
                 <Location>
                   <X>43.5 px</X>
-                  <Y>1.22070312045253E-05 px</Y>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -928,12 +939,13 @@
             </CommentOffset>
           </Model>
         </Children>
+        <GridEnabled>false</GridEnabled>
         <ViewPort>
           <ScaleMode>Free</ScaleMode>
           <Scale>0.71</Scale>
           <Location>
             <X>-323.94367176208 px</X>
-            <Y>35.2112687661804 px</Y>
+            <Y>-73.2394389739186 px</Y>
           </Location>
         </ViewPort>
       </Model>

@@ -2524,3 +2524,656 @@
 2016-11-11 01:04:54|INFO |responce|192.168.1.211|<responce><userState><login>????</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
 2016-11-11 01:04:54|INFO |request |192.168.1.211|<request><palnToDay><sessionId>5dde84feae0f636c505463b818cc99d7</sessionId></palnToDay></request>
 2016-11-11 01:04:54|INFO |responce|192.168.1.211|<responce></responce>
+2016-11-11 01:17:23|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 01:17:25|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 01:17:25|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 01:17:25|INFO |HHH000206: hibernate.properties not found
+2016-11-11 01:17:25|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 01:17:25|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 01:17:25|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 01:17:25|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 01:17:26|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 01:17:26|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 01:17:26|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 01:17:26|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 01:17:26|INFO |HHH000006: Autocommit mode: false
+2016-11-11 01:17:26|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 01:17:27|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 01:17:27|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 01:17:27|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 01:17:28|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 01:17:30|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 01:17:30|INFO |HHH000102: Fetching database metadata
+2016-11-11 01:17:30|INFO |HHH000396: Updating schema
+2016-11-11 01:17:30|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 01:17:30|INFO |HHH000037: Columns: [mail, name, id, confirmation, hashpass]
+2016-11-11 01:17:30|INFO |HHH000108: Foreign keys: []
+2016-11-11 01:17:30|INFO |HHH000126: Indexes: [primary]
+2016-11-11 01:17:30|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 01:17:30|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 01:17:30|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 01:17:30|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 01:17:31|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 01:17:31|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 01:17:31|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 01:17:31|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 01:17:31|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 01:17:31|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 01:17:31|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 01:17:31|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 01:17:31|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 01:17:31|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 01:17:31|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 01:17:31|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 01:17:31|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 01:17:31|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 01:17:31|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 01:17:31|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 01:17:31|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 01:17:31|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 01:17:31|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 01:17:31|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 01:17:31|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 01:17:31|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 01:17:31|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 01:17:31|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 01:17:31|INFO |HHH000232: Schema update complete
+2016-11-11 01:17:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></authorization></responce>
+2016-11-11 01:17:31|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:17:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:17:31|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:17:32|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:17:51|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:17:51|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:22:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:22:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:49:40|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:49:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:49:40|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:49:40|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:50:23|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:50:23|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:50:23|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:50:23|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:51:00|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:51:00|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:51:01|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:51:01|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:51:36|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:51:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:51:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:51:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:53:34|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:53:34|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:53:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:53:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 01:53:44|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></userState></request>
+2016-11-11 01:53:44|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState></responce>
+2016-11-11 01:53:44|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>0ad980fc1bd10f8c5de1230eeceef280</sessionId></palnToDay></request>
+2016-11-11 01:53:44|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:14:32|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:14:33|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 03:14:33|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 03:14:33|INFO |HHH000206: hibernate.properties not found
+2016-11-11 03:14:33|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 03:14:33|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 03:14:33|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 03:14:33|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 03:14:34|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 03:14:34|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 03:14:34|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 03:14:34|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 03:14:34|INFO |HHH000006: Autocommit mode: false
+2016-11-11 03:14:34|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 03:14:34|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:14:35|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:14:35|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 03:14:36|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:14:36|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 03:14:36|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 03:14:36|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 03:14:38|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 03:14:38|INFO |HHH000102: Fetching database metadata
+2016-11-11 03:14:38|INFO |HHH000396: Updating schema
+2016-11-11 03:14:38|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 03:14:38|INFO |HHH000037: Columns: [mail, name, id, confirmation, hashpass]
+2016-11-11 03:14:38|INFO |HHH000108: Foreign keys: []
+2016-11-11 03:14:38|INFO |HHH000126: Indexes: [primary]
+2016-11-11 03:14:38|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 03:14:38|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 03:14:38|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 03:14:38|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 03:14:38|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 03:14:38|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:14:38|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 03:14:38|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 03:14:38|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 03:14:38|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 03:14:38|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 03:14:38|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 03:14:38|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 03:14:38|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 03:14:38|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 03:14:38|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 03:14:39|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 03:14:39|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 03:14:39|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 03:14:39|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 03:14:39|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 03:14:39|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 03:14:39|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 03:14:39|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 03:14:39|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 03:14:39|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:14:39|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 03:14:39|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 03:14:40|INFO |HHH000232: Schema update complete
+2016-11-11 03:14:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>2a60b32a57d9821ad67e951297c4f336</sessionId></authorization></responce>
+2016-11-11 03:14:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>a33951bfd6f744ca13f090fdcf46b6da</sessionId></authorization></responce>
+2016-11-11 03:14:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>74bae238365f4572f128a553b0fb02b6</sessionId></authorization></responce>
+2016-11-11 03:14:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>b1728f63ea1440391b306a0a3c4d0197</sessionId></authorization></responce>
+2016-11-11 03:14:40|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>a33951bfd6f744ca13f090fdcf46b6da</sessionId></userState></request>
+2016-11-11 03:14:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:14:40|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>a33951bfd6f744ca13f090fdcf46b6da</sessionId></palnToDay></request>
+2016-11-11 03:14:40|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:15:28|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>a33951bfd6f744ca13f090fdcf46b6da</sessionId></palnToDay></request>
+2016-11-11 03:15:28|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:15:39|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>a33951bfd6f744ca13f090fdcf46b6da</sessionId></palnToDay></request>
+2016-11-11 03:15:39|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:16:09|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>a33951bfd6f744ca13f090fdcf46b6da</sessionId></closeSession></request>
+2016-11-11 03:16:09|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 03:16:14|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:16:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>25dd08495ccd433bfdba01f71b35df73</sessionId></authorization></responce>
+2016-11-11 03:16:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>25dd08495ccd433bfdba01f71b35df73</sessionId></userState></request>
+2016-11-11 03:16:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:16:14|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>25dd08495ccd433bfdba01f71b35df73</sessionId></palnToDay></request>
+2016-11-11 03:16:15|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:29:33|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:29:34|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 03:29:34|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 03:29:34|INFO |HHH000206: hibernate.properties not found
+2016-11-11 03:29:34|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 03:29:34|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 03:29:34|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 03:29:34|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 03:29:34|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 03:29:34|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 03:29:34|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 03:29:34|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 03:29:34|INFO |HHH000006: Autocommit mode: false
+2016-11-11 03:29:34|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 03:29:36|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 03:29:36|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 03:29:36|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 03:29:36|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 03:29:38|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 03:29:38|INFO |HHH000102: Fetching database metadata
+2016-11-11 03:29:38|INFO |HHH000396: Updating schema
+2016-11-11 03:29:38|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 03:29:38|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-11-11 03:29:38|INFO |HHH000108: Foreign keys: []
+2016-11-11 03:29:38|INFO |HHH000126: Indexes: [primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 03:29:39|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 03:29:39|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:29:39|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 03:29:39|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 03:29:39|INFO |HHH000232: Schema update complete
+2016-11-11 03:29:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></authorization></responce>
+2016-11-11 03:29:39|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:29:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:29:39|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:29:39|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:31:39|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:31:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:31:40|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:31:40|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:32:00|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:32:01|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:32:01|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:32:01|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:32:09|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:32:09|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:32:10|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:32:10|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:32:44|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:32:44|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:32:44|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:32:44|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:33:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:33:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:33:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:33:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:33:50|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:33:50|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:33:50|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:33:50|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:35:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:35:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:35:16|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:35:16|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:37:24|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:37:24|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:37:25|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:37:25|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:38:06|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:38:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:38:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:38:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:38:12|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:38:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:38:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:38:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:40:11|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:40:11|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:40:11|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:40:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:40:33|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:40:33|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:40:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:40:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:41:59|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:41:59|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:41:59|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:41:59|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:42:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:42:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:47:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:47:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:50:27|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:50:27|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:50:31|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:50:31|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:50:32|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:50:32|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:53:37|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:53:37|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:53:37|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:53:37|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:55:37|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></userState></request>
+2016-11-11 03:55:37|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительноподтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:55:37|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5d300b4489f99ebfe2a05d02ae787337</sessionId></palnToDay></request>
+2016-11-11 03:55:37|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:57:17|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:57:17|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 03:57:17|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 03:57:17|INFO |HHH000206: hibernate.properties not found
+2016-11-11 03:57:17|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 03:57:17|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 03:57:17|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 03:57:18|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 03:57:18|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 03:57:18|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 03:57:18|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 03:57:18|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 03:57:18|INFO |HHH000006: Autocommit mode: false
+2016-11-11 03:57:18|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 03:57:18|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 03:57:19|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 03:57:19|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 03:57:19|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 03:57:21|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 03:57:21|INFO |HHH000102: Fetching database metadata
+2016-11-11 03:57:21|INFO |HHH000396: Updating schema
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: []
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 03:57:21|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 03:57:21|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:57:21|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 03:57:21|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 03:57:21|INFO |HHH000232: Schema update complete
+2016-11-11 03:57:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>95dff7b042bcdc8cecd3af6378051a3c</sessionId></authorization></responce>
+2016-11-11 03:57:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>95dff7b042bcdc8cecd3af6378051a3c</sessionId></userState></request>
+2016-11-11 03:57:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:57:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>95dff7b042bcdc8cecd3af6378051a3c</sessionId></palnToDay></request>
+2016-11-11 03:57:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:58:40|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>95dff7b042bcdc8cecd3af6378051a3c</sessionId></closeSession></request>
+2016-11-11 03:58:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>session not found</closeSession></responce>
+2016-11-11 03:58:43|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 03:58:43|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 03:58:43|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 03:58:43|INFO |HHH000206: hibernate.properties not found
+2016-11-11 03:58:43|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 03:58:43|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 03:58:43|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 03:58:43|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 03:58:43|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 03:58:44|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 03:58:44|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 03:58:44|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 03:58:44|INFO |HHH000006: Autocommit mode: false
+2016-11-11 03:58:44|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 03:58:45|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 03:58:45|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 03:58:45|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 03:58:45|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 03:58:47|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 03:58:47|INFO |HHH000102: Fetching database metadata
+2016-11-11 03:58:47|INFO |HHH000396: Updating schema
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: []
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 03:58:47|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 03:58:47|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 03:58:47|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 03:58:47|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 03:58:47|INFO |HHH000232: Schema update complete
+2016-11-11 03:58:48|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>4ccc304fdcba89a0d07d7755bb47feeb</sessionId></authorization></responce>
+2016-11-11 03:58:48|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>4ccc304fdcba89a0d07d7755bb47feeb</sessionId></userState></request>
+2016-11-11 03:58:48|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:58:48|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>4ccc304fdcba89a0d07d7755bb47feeb</sessionId></palnToDay></request>
+2016-11-11 03:58:48|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:58:56|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>4ccc304fdcba89a0d07d7755bb47feeb</sessionId></userState></request>
+2016-11-11 03:58:56|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 03:58:56|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>4ccc304fdcba89a0d07d7755bb47feeb</sessionId></palnToDay></request>
+2016-11-11 03:58:56|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 03:59:59|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:00:00|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 04:00:00|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 04:00:00|INFO |HHH000206: hibernate.properties not found
+2016-11-11 04:00:00|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 04:00:00|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 04:00:00|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 04:00:01|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 04:00:01|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 04:00:01|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 04:00:01|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 04:00:01|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 04:00:01|INFO |HHH000006: Autocommit mode: false
+2016-11-11 04:00:01|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 04:00:02|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 04:00:02|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 04:00:02|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 04:00:02|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 04:00:04|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 04:00:04|INFO |HHH000102: Fetching database metadata
+2016-11-11 04:00:04|INFO |HHH000396: Updating schema
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: []
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 04:00:05|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 04:00:05|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 04:00:05|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 04:00:05|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 04:00:05|INFO |HHH000232: Schema update complete
+2016-11-11 04:00:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></authorization></responce>
+2016-11-11 04:00:05|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></userState></request>
+2016-11-11 04:00:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:00:05|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></palnToDay></request>
+2016-11-11 04:00:05|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:00:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></userState></request>
+2016-11-11 04:00:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:00:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></palnToDay></request>
+2016-11-11 04:00:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:02:26|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></userState></request>
+2016-11-11 04:02:26|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:02:26|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></palnToDay></request>
+2016-11-11 04:02:26|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:02:37|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></userState></request>
+2016-11-11 04:02:37|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:02:37|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>3c150f4cba577d72672105a944b80fe3</sessionId></palnToDay></request>
+2016-11-11 04:02:37|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:03:21|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:03:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>2be0dca2ec66d2cef848009c02f0aec0</sessionId></authorization></responce>
+2016-11-11 04:03:21|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>2be0dca2ec66d2cef848009c02f0aec0</sessionId></userState></request>
+2016-11-11 04:03:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:03:21|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>2be0dca2ec66d2cef848009c02f0aec0</sessionId></palnToDay></request>
+2016-11-11 04:03:21|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:03:26|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>2be0dca2ec66d2cef848009c02f0aec0</sessionId></closeSession></request>
+2016-11-11 04:03:26|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:03:29|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:03:29|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>a344059b447479bb318959b430371874</sessionId></authorization></responce>
+2016-11-11 04:03:29|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>a344059b447479bb318959b430371874</sessionId></userState></request>
+2016-11-11 04:03:29|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:03:29|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>a344059b447479bb318959b430371874</sessionId></palnToDay></request>
+2016-11-11 04:03:29|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:04:42|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>a344059b447479bb318959b430371874</sessionId></closeSession></request>
+2016-11-11 04:04:42|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:06:06|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:06:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>67bcdc3e5f10d3ecf5246390f7d53a4d</sessionId></authorization></responce>
+2016-11-11 04:06:06|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>67bcdc3e5f10d3ecf5246390f7d53a4d</sessionId></userState></request>
+2016-11-11 04:06:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:06:06|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>67bcdc3e5f10d3ecf5246390f7d53a4d</sessionId></palnToDay></request>
+2016-11-11 04:06:06|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:10:50|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>67bcdc3e5f10d3ecf5246390f7d53a4d</sessionId></closeSession></request>
+2016-11-11 04:10:50|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:10:58|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:10:58|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>193cd35320cb0f7b820ecc2dac53133e</sessionId></authorization></responce>
+2016-11-11 04:10:58|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>193cd35320cb0f7b820ecc2dac53133e</sessionId></userState></request>
+2016-11-11 04:10:58|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:10:58|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>193cd35320cb0f7b820ecc2dac53133e</sessionId></palnToDay></request>
+2016-11-11 04:10:58|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:14:01|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>193cd35320cb0f7b820ecc2dac53133e</sessionId></closeSession></request>
+2016-11-11 04:14:01|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:14:04|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:14:04|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>b394fa2bff3c7f6ffc3eaa00d5f377ff</sessionId></authorization></responce>
+2016-11-11 04:14:04|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>b394fa2bff3c7f6ffc3eaa00d5f377ff</sessionId></userState></request>
+2016-11-11 04:14:04|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:14:04|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b394fa2bff3c7f6ffc3eaa00d5f377ff</sessionId></palnToDay></request>
+2016-11-11 04:14:04|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:14:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b394fa2bff3c7f6ffc3eaa00d5f377ff</sessionId></palnToDay></request>
+2016-11-11 04:14:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:15:42|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>b394fa2bff3c7f6ffc3eaa00d5f377ff</sessionId></closeSession></request>
+2016-11-11 04:15:42|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:15:46|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:15:46|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>9de9bbdf0529da3b8f0fb69949fe0dbe</sessionId></authorization></responce>
+2016-11-11 04:15:46|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>9de9bbdf0529da3b8f0fb69949fe0dbe</sessionId></userState></request>
+2016-11-11 04:15:46|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:15:46|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>9de9bbdf0529da3b8f0fb69949fe0dbe</sessionId></palnToDay></request>
+2016-11-11 04:15:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:16:36|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>9de9bbdf0529da3b8f0fb69949fe0dbe</sessionId></closeSession></request>
+2016-11-11 04:16:37|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:16:40|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:16:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>8767ad3691cabe84008db82206ee0c09</sessionId></authorization></responce>
+2016-11-11 04:16:40|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>8767ad3691cabe84008db82206ee0c09</sessionId></userState></request>
+2016-11-11 04:16:40|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:16:40|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>8767ad3691cabe84008db82206ee0c09</sessionId></palnToDay></request>
+2016-11-11 04:16:40|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:17:00|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>8767ad3691cabe84008db82206ee0c09</sessionId></closeSession></request>
+2016-11-11 04:17:00|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 04:17:03|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 04:17:03|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>59fc9a112438c90f7acd644eca9e12fc</sessionId></authorization></responce>
+2016-11-11 04:17:03|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>59fc9a112438c90f7acd644eca9e12fc</sessionId></userState></request>
+2016-11-11 04:17:03|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 04:17:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>59fc9a112438c90f7acd644eca9e12fc</sessionId></palnToDay></request>
+2016-11-11 04:17:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 04:18:16|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>59fc9a112438c90f7acd644eca9e12fc</sessionId></palnToDay></request>
+2016-11-11 04:18:16|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:35:15|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 14:35:16|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 14:35:16|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-11 14:35:16|INFO |HHH000206: hibernate.properties not found
+2016-11-11 14:35:16|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-11 14:35:16|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-11 14:35:16|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-11 14:35:16|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-11 14:35:16|INFO |HHH000041: Configured SessionFactory: null
+2016-11-11 14:35:17|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 14:35:17|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-11 14:35:17|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 14:35:17|INFO |HHH000006: Autocommit mode: false
+2016-11-11 14:35:17|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 14:35:18|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-11 14:35:19|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 14:35:19|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 14:35:19|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-11 14:35:21|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-11 14:35:21|INFO |HHH000102: Fetching database metadata
+2016-11-11 14:35:21|INFO |HHH000396: Updating schema
+2016-11-11 14:35:21|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-11-11 14:35:21|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-11-11 14:35:21|INFO |HHH000108: Foreign keys: []
+2016-11-11 14:35:21|INFO |HHH000126: Indexes: [primary]
+2016-11-11 14:35:21|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-11 14:35:21|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-11-11 14:35:21|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-11 14:35:21|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-11 14:35:21|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-11 14:35:21|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 14:35:21|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-11 14:35:21|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-11 14:35:21|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-11 14:35:21|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-11-11 14:35:21|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-11 14:35:21|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-11-11 14:35:21|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-11 14:35:21|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, startdate]
+2016-11-11 14:35:21|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-11 14:35:21|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-11-11 14:35:21|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-11 14:35:21|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, acount_id, start_date]
+2016-11-11 14:35:21|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-11 14:35:21|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-11-11 14:35:22|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-11 14:35:22|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-11-11 14:35:22|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-11-11 14:35:22|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-11-11 14:35:22|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-11 14:35:22|INFO |HHH000037: Columns: [date, user_id, id]
+2016-11-11 14:35:22|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-11 14:35:22|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-11 14:35:22|INFO |HHH000232: Schema update complete
+2016-11-11 14:35:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>6d4af7aa62823b3b1c64ee5a6aa20982</sessionId></authorization></responce>
+2016-11-11 14:35:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>6d4af7aa62823b3b1c64ee5a6aa20982</sessionId></userState></request>
+2016-11-11 14:35:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 14:35:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>6d4af7aa62823b3b1c64ee5a6aa20982</sessionId></palnToDay></request>
+2016-11-11 14:35:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:39:44|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>6d4af7aa62823b3b1c64ee5a6aa20982</sessionId></closeSession></request>
+2016-11-11 14:39:44|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>ok</closeSession></responce>
+2016-11-11 14:40:06|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-11 14:40:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></authorization></responce>
+2016-11-11 14:40:06|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></userState></request>
+2016-11-11 14:40:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 14:40:06|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:06|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:40:33|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:33|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:40:36|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></userState></request>
+2016-11-11 14:40:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 14:40:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:40:41|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></userState></request>
+2016-11-11 14:40:41|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 14:40:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:40:43|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:43|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:40:44|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:44|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:40:46|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20d735c3d4eb8c5a38584ce3b07f2c84</sessionId></palnToDay></request>
+2016-11-11 14:40:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:41:19|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>bhijnl</name>                <mail>ibjnomk;</mail>                <hashPass>kjh</hashPass>            </registration>        </request>
+2016-11-11 14:41:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></registration></responce>
+2016-11-11 14:41:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></userState></request>
+2016-11-11 14:41:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>bhijnl</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 14:41:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
+2016-11-11 14:41:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:41:47|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
+2016-11-11 14:41:47|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:42:00|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
+2016-11-11 14:42:00|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:42:31|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
+2016-11-11 14:42:31|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-11 14:44:41|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></userState></request>
+2016-11-11 14:44:41|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>bhijnl</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-11 14:44:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
+2016-11-11 14:44:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>

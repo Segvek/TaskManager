@@ -34,12 +34,25 @@ public class UserStateFunction implements Function {
         String sessionid = handler.getSessionID();
         Session session = SessionManagerImpl.getInstance().getSession(sessionid);
         
+        StringBuilder responce = new StringBuilder();
+        
         if (session != null) {
             User user = (User) (session.getAttribute("user"));
-            return "<userState><login>" + user.getName() + "</login><MailState>0</MailState><countMessage>2</countMessage><dataRegistration>05.11.2016</dataRegistration></userState>";
+            responce.append("<userState><login>" + user.getName() + "</login><dataRegistration>"+user.getDateRegistration()+"</dataRegistration>");
+            responce.append("<warnings>");
+            if(!"true".equals(user.getConfirmation())){
+                responce.append("<warning><content>Уважаемый пользователь, для избежания "
+                        + "и корректного разрешения непредвиденных ситуаций. Просим незамедлительно"
+                        + " подтвердить свой почтовый адресс.</content>"
+                        + "<title>Подтверждение почтового адреса.</title></warning>");
+            }
+            responce.append("</warnings>");
+            responce.append("<countMessage>2</countMessage>");
+            responce.append("</userState>");
         }else{
-            return "<error>Session not found</error>";
+            responce.append("<error>Session not found</error>");
         }
+        return responce.toString();
     }
 
 }

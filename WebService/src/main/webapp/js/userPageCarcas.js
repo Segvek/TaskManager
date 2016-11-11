@@ -13,10 +13,20 @@ var userPageCarcas = function () {
         var $login = $(xml).find('login');
         var $countMessage = $(xml).find('countMessage');
         var $dataRegistration = $(xml).find('dataRegistration');
-        viewsi.setAttribut("userlogin",$login.text());
-        viewsi.setAttribut("countMessage",$countMessage.text());
-        viewsi.setAttribut("dateregistration",$dataRegistration.text());
-        page.innerHTML = viewsi.getHTML();
+        viewsi.setAttribut("userlogin", $login.text());
+        viewsi.setAttribut("countMessage", $countMessage.text());
+        viewsi.setAttribut("dateregistration", $dataRegistration.text());
+
+        var htmltext = "";
+        for (var i = 0; i < xml.getElementsByTagName('warning').length; i++) {
+            var mess = xml.getElementsByTagName('warning')[i];
+            var alert = new View("IncludeView/ViewAlertMessage.html");
+            alert.setAttribut("title",$(mess).find('title').text());
+            alert.setAttribut("mesage",$(mess).find('content').text());
+            htmltext += alert.getHTML();
+        }
+        htmltext += viewsi.getHTML();
+        page.innerHTML = htmltext;
         mainUserPage();
     });
 }
@@ -34,9 +44,9 @@ var userExit = function () {
     welcomePage();
 }
 
-var clickItemMenuGoals = function(){
+var clickItemMenuGoals = function () {
     goalUserPage();
 }
-var clickItemMenuMain = function (){
+var clickItemMenuMain = function () {
     mainUserPage();
 }

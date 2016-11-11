@@ -12,7 +12,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
@@ -34,6 +33,9 @@ public class User extends Model {
     
     @Column(name="confirmation", length = 50)
     private String confirmation;
+    
+    @Column(name="dateRegistration", length = 50)
+    private String dateRegistration;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
     private List<Acount> acounts = new ArrayList<>();
@@ -115,6 +117,14 @@ public class User extends Model {
     @Override
     public String toString() {
         return "User{" + "name=" + name + ", mail=" + mail + ", hashPass=" + hashPass + ", confirmation=" + confirmation + ", acounts=" + acounts + ", fixingsAcounts=" + fixingsAcounts + ", goals=" + goals + ", planToDay=" + planToDay + '}';
+    }
+
+    public String getDateRegistration() {
+        return dateRegistration;
+    }
+
+    public void setDateRegistration(String dateRegistration) {
+        this.dateRegistration = dateRegistration;
     }
 
     
