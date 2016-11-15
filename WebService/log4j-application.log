@@ -3177,3 +3177,19 @@
 2016-11-11 14:44:41|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>bhijnl</login><dataRegistration>null</dataRegistration><warnings><warning><content>”важаемый пользователь, дл€ избежани€ и корректного разрешени€ непредвиденных ситуаций. ѕросим незамедлительно подтвердить свой почтовый адресс.</content><title>ѕодтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
 2016-11-11 14:44:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
 2016-11-11 14:44:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-15 21:14:48|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-15 21:14:50|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-15 21:14:51|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-15 21:14:53|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-15 21:14:54|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-15 21:14:54|INFO |HHH000206: hibernate.properties not found
+2016-11-15 21:14:54|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-15 21:14:54|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-15 21:14:54|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-15 21:14:54|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-15 21:14:55|INFO |HHH000041: Configured SessionFactory: null
+2016-11-15 21:14:55|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-15 21:14:55|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-15 21:14:55|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-15 21:14:55|INFO |HHH000006: Autocommit mode: false
+2016-11-15 21:14:55|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
