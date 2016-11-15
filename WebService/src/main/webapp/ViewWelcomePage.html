@@ -1,0 +1,106 @@
+<div class="welcome-page">
+    <header>
+        <div class="navb container-fluid">
+            <div class="container">
+                <div id="logo">TaskManager</div>
+                <div class="nav-form">
+                    <input type="button" id="but1" class="button" value="вход">
+                    <input type="button" id="but2" class="button" value="регистрация">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-text">
+                Что необходимо для начала работи с нашим сервисом<br>
+                <span id="s1"> 1. создать акаунт</span> <br>
+                <span id="s2"> 2. установить приложение на телефон</span> <br>
+                <span id="s3"> 3. начать работать над своими целями </span><br>
+            </div>
+        </div>
+    </header>
+
+    <!-- Form 1-->
+    <div id="in" class="container">
+        <div id="form-autorithation">
+            <p>+</p>
+            <input class="input-text name" type="text"     id="login" name="login" value="YuriPanasenco" placeholder="Login" required="true"/>
+            <input class="input-text password" type="password" id="pass" name="pass"  value="12345" placeholder="Passwor" required="true"/>
+            <input class="button"     type="button"   name="get" value="Войти" onclick="authorization();"/>
+        </div>
+    </div>	
+    <!-- Form 2-->
+    <div id="out" class="container">
+        <div id="form-registration">
+            <p>+</p> 
+            <input type="text" class="input-text name" id="login-registration" name="login" placeholder="NAME" required="true">
+            <input type="text" class="input-text email" id="mail-registration" name="mail" placeholder="EMAIL" required="true">
+            <input type="password" class="input-text password" id="password-registration" name="password" placeholder="PASSWORD" required="true">
+            <input type="password" class="input-text password" id="repeat-password-registration" name="password" placeholder="PASSWORD*" required="true">
+            <input type="submit" class="button"  value="зарегестрироваться" onclick="registration();">
+        </div>
+    </div>		
+    <!--  -->
+
+    <section class="container-fluid">
+        <div class="container row description">
+            <div class="desc col-sm-3">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                <div class="text">Создание целей</div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                <div class="text">Создание плана на завтра</div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <div class="text">Создание счетов</div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                <div class="text">Фиксирование состояний счетов </div>
+            </div>
+        </div>
+        <div class="container row description">
+            <div class="desc col-sm-3">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                <div class="text">Подтвердить выполнения пункта ежедневного плана</div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <div class="text">Просмотр графика активности</div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                <div class="text">Просмотр отчёта по цели</div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i></i>
+                <div class="text">Просмотр отчета по конкретному пункту плана</div>
+            </div>
+        </div>
+        <div class="container row description">
+            <div class="desc col-sm-3 none">
+
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-money" aria-hidden="true"></i>
+                <div class="text">Просмотр отчёта о сосотоянии своих средств </div>
+            </div>
+            <div class="desc col-sm-3">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <div class="text">Настройка уведомлений</div>
+            </div>
+            <div class="desc col-sm-3">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <p>+380939227888<br>
+                Дидык<br>
+                Панасенко<br></p>
+        </div>
+    </footer>
+</div>
