@@ -16,3 +16,7 @@ hs_err_pid*
 /WebService/build/
 /WebService/dist/
 /WebService/target/
+WebService/src/main/webapp/.idea/misc.xml
+WebService/src/main/webapp/.idea/modules.xml
+WebService/src/main/webapp/.idea/webapp.iml
+WebService/src/main/webapp/.idea/workspace.xml
