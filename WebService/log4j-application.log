@@ -3177,3 +3177,690 @@
 2016-11-11 14:44:41|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>bhijnl</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
 2016-11-11 14:44:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>226cd4a6f5d4614f65651b43d13ccf9f</sessionId></palnToDay></request>
 2016-11-11 14:44:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:18:11|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:13|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-17 23:18:13|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-17 23:18:13|INFO |HHH000206: hibernate.properties not found
+2016-11-17 23:18:13|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-17 23:18:13|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-17 23:18:13|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-17 23:18:14|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-17 23:18:14|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:14|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:14|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:14|INFO |HHH000041: Configured SessionFactory: null
+2016-11-17 23:18:14|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:14|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:14|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-17 23:18:15|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-17 23:18:15|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-17 23:18:15|INFO |HHH000006: Autocommit mode: false
+2016-11-17 23:18:15|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-17 23:18:15|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:16|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:16|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:16|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-17 23:18:16|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-17 23:18:17|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-17 23:18:17|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-17 23:18:17|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-17 23:18:19|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-17 23:18:19|INFO |HHH000102: Fetching database metadata
+2016-11-17 23:18:19|INFO |HHH000396: Updating schema
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.User
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, mail, hashpass, name, confirmation, dateregistration]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: []
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [primary]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, annitation, name, user_id]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, acount_id, value, fixing_acout_id]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [primary, fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [annotation, id, startdate, name, user_id, enddate]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [primary, fk_7b7j83l6dquot72lsg25y8323]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, end_date, acount_id, goal_id, name, anotation, start_date]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [primary, fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, plan_to_day_id, item_goal_plan_id, status, time_notifice, name, anotation]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_heohxmesm3ou68j85wfla5xtn, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [fk_heohxmesm3ou68j85wfla5xtn, primary, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-17 23:18:20|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-17 23:18:20|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-17 23:18:20|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-17 23:18:20|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-17 23:18:20|INFO |HHH000232: Schema update complete
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:21|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>User not found</error></responce>
+2016-11-17 23:18:32|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>sergpf</name>                <mail>bakumenkosergey.1996@gmail.com</mail>                <hashPass>leo1996</hashPass>            </registration>        </request>
+2016-11-17 23:18:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><error>A user with this email address already zaregistrirovan</error></registration></responce>
+2016-11-17 23:18:34|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>sergpf</name>                <mail>bakumenkosergey.1996@gmail.com</mail>                <hashPass>leo1996</hashPass>            </registration>        </request>
+2016-11-17 23:18:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><error>A user with this email address already zaregistrirovan</error></registration></responce>
+2016-11-17 23:18:35|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>sergpf</name>                <mail>bakumenkosergey.1996@gmail.com</mail>                <hashPass>leo1996</hashPass>            </registration>        </request>
+2016-11-17 23:18:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><error>A user with this email address already zaregistrirovan</error></registration></responce>
+2016-11-17 23:18:35|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>sergpf</name>                <mail>bakumenkosergey.1996@gmail.com</mail>                <hashPass>leo1996</hashPass>            </registration>        </request>
+2016-11-17 23:18:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><error>A user with this email address already zaregistrirovan</error></registration></responce>
+2016-11-17 23:18:35|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>sergpf</name>                <mail>bakumenkosergey.1996@gmail.com</mail>                <hashPass>leo1996</hashPass>            </registration>        </request>
+2016-11-17 23:18:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><error>A user with this email address already zaregistrirovan</error></registration></responce>
+2016-11-17 23:20:10|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:27|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:27|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:27|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:27|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:25|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:25|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:25|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:25|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:21|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:21|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:20|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:20|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:20|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:20|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:19|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 119 481 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 133 888 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 133 849 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|WARN |SQL Error: 0, SQLState: 08S01
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 121 809 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 133 874 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 119 901 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 119 735 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 119 606 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 133 849 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:34|ERROR|Communications link failure
+
+The last packet successfully received from the server was 133 850 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>58f69209d413670752a82e5e5e731473</sessionId></authorization></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>18b071fb750a354774e45e9adba1d3b8</sessionId></authorization></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>d4258d8ddb6c574e31ac742c2aeaf42d</sessionId></authorization></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>97fa2c2c65b0362e951928deb0d82c1e</sessionId></authorization></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>0af2ca33cb41bf6202065e5b4ce411fc</sessionId></authorization></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>c7e5e555960cb45a1b79d5af4e685b1f</sessionId></authorization></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:45|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:20:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:45|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:53|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:53|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:55|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:20:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:55|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:57|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:57|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:20:59|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:20:59|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:21:59|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:21:59|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:00|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:22:00|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:02|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:22:02|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:02|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:22:02|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:36|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:22:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:22:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:38|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:22:38|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:22:38|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:22:38|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:35|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:38|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:38|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:38|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:38|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:40|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:40|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:40|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:41|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:45|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:45|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:46|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:46|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:47|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:47|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:48|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:48|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:48|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:48|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:49|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:48:49|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:48:49|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:48:49|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:08|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:10|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:10|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:10|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:10|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:13|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:13|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:14|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:14|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:16|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:16|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:16|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:17|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:18|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:18|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:19|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:19|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:31|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:31|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:31|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:31|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:32|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:49:32|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:49:32|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:49:32|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:49|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:49|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:49|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:49|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:50|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:50|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:50|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:50|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:52|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:53|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:53|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:54|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:54|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:54|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:54|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:55|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:55|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:55|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:55|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:57|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:50:57|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:50:57|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:50:57|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:11|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:11|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:15|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:15|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:15|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:15|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:15|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:15|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:15|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:15|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:18|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:18|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:20|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:20|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:20|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:20|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:21|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:21|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:21|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:21|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:23|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:23|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:24|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:24|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:57|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:57|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:57|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:57|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:59|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:52:59|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:52:59|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:52:59|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:53:01|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:53:01|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:53:01|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:53:01|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:53:02|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:53:02|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:53:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:53:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:53:04|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:53:04|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:02|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:58:02|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:02|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:02|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:03|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:58:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:05|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:05|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:08|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:58:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:09|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:58:09|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:09|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:09|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:10|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:10|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:11|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-17 23:58:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-17 23:58:11|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-17 23:58:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:34|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:34|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:40|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:40|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:42|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-18 00:03:42|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:42|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:42|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:43|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-18 00:03:43|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:43|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:43|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:43|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-18 00:03:43|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:03:44|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:03:44|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:04:18|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:04:18|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:04:21|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:04:21|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:04:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:04:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:04:24|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:04:24|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:03|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-18 00:06:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:06:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:07|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-18 00:06:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:06:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:12|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId></sessionId></userState></request>
+2016-11-18 00:06:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId></sessionId></palnToDay></request>
+2016-11-18 00:06:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:24|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 00:06:25|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-18 00:06:25|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-18 00:06:25|INFO |HHH000206: hibernate.properties not found
+2016-11-18 00:06:25|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-18 00:06:25|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-18 00:06:25|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-18 00:06:25|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-18 00:06:25|INFO |HHH000041: Configured SessionFactory: null
+2016-11-18 00:06:25|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-18 00:06:25|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-18 00:06:25|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-18 00:06:25|INFO |HHH000006: Autocommit mode: false
+2016-11-18 00:06:25|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-18 00:06:25|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-18 00:06:26|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-18 00:06:26|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-18 00:06:26|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-18 00:06:26|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-18 00:06:26|INFO |HHH000102: Fetching database metadata
+2016-11-18 00:06:26|INFO |HHH000396: Updating schema
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.User
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, mail, hashpass, name, confirmation, dateregistration]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: []
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [primary]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, annitation, name, user_id]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, acount_id, value, fixing_acout_id]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [primary, fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [annotation, id, startdate, name, user_id, enddate]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [primary, fk_7b7j83l6dquot72lsg25y8323]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, end_date, acount_id, goal_id, name, anotation, start_date]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [primary, fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, plan_to_day_id, item_goal_plan_id, status, time_notifice, name, anotation]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_heohxmesm3ou68j85wfla5xtn, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [fk_heohxmesm3ou68j85wfla5xtn, primary, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-18 00:06:26|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-18 00:06:26|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-18 00:06:26|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-18 00:06:26|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-18 00:06:26|INFO |HHH000232: Schema update complete
+2016-11-18 00:06:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></authorization></responce>
+2016-11-18 00:06:27|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:06:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:06:27|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:06:27|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:06:33|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:06:33|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:06:33|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:06:33|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:10:30|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:10:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:10:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:10:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:11:06|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:11:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:11:06|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:11:06|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:12:32|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:12:32|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:12:32|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:12:32|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:13:03|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:13:03|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:13:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:13:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:17:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:17:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:17:14|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:17:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:20:33|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:20:33|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:26:53|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 00:26:53|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 00:26:53|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:26:53|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:27:00|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:27:00|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:27:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:27:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:27:06|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:27:06|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 00:27:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 00:27:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 01:59:37|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 01:59:37|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:21:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:21:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:21:07|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:21:07|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:21:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:21:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:21:10|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:21:10|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:21:16|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:21:16|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:21:27|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:21:27|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:27:07|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:27:07|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:27:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:27:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:27:27|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:27:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:27:27|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:27:27|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:32:45|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:32:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:32:47|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:32:47|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:32:47|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:32:47|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:32:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:32:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:32:54|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:32:54|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:32:55|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:32:55|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:09|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:33:09|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:33:09|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:09|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:11|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:16|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:16|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:18|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:18|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:45|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:45|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:47|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:33:47|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:33:47|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:47|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:33:51|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:33:51|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:44:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:44:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:44:26|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:44:26|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:45:30|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:45:30|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:45:39|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:45:39|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:45:41|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:45:41|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:45:42|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:45:42|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:46:07|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:46:07|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:46:07|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:46:07|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:46:13|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:46:13|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:46:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:46:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:46:14|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:46:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:46:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:46:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:47:08|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:47:08|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:47:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:47:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:47:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:47:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:47:28|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:47:28|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:48:46|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:48:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:48:50|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:48:50|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:48:53|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:48:53|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:48:59|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:48:59|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:49:03|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:49:03|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:53:48|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:53:48|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 02:53:48|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:53:48|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:54:01|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:54:01|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:54:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:54:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:54:11|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></palnToDay></request>
+2016-11-18 02:54:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 02:56:02|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:56:03|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-11-18 02:56:08|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:56:08|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-11-18 02:56:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:56:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-11-18 02:56:15|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:56:15|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-11-18 02:56:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:56:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-11-18 02:56:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ab9ae91b75ecf31b0018c36b9984b60b</sessionId></userState></request>
+2016-11-18 02:56:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-11-18 13:21:19|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 13:21:20|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-18 13:21:21|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-18 13:21:21|INFO |HHH000206: hibernate.properties not found
+2016-11-18 13:21:21|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-18 13:21:21|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-18 13:21:21|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-18 13:21:21|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-18 13:21:21|INFO |HHH000041: Configured SessionFactory: null
+2016-11-18 13:21:21|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-18 13:21:21|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-18 13:21:21|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-18 13:21:21|INFO |HHH000006: Autocommit mode: false
+2016-11-18 13:21:21|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-18 13:21:23|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-18 13:21:23|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-18 13:21:23|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-18 13:21:24|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-18 13:21:27|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-18 13:21:27|INFO |HHH000102: Fetching database metadata
+2016-11-18 13:21:27|INFO |HHH000396: Updating schema
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.User
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [id, mail, hashpass, name, confirmation, dateregistration]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: []
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [primary]
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [id, annitation, name, user_id]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [id, acount_id, value, fixing_acout_id]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [primary, fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [annotation, id, startdate, name, user_id, enddate]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [primary, fk_7b7j83l6dquot72lsg25y8323]
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [id, end_date, acount_id, goal_id, name, anotation, start_date]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [primary, fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-18 13:21:27|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-18 13:21:27|INFO |HHH000037: Columns: [id, plan_to_day_id, item_goal_plan_id, status, time_notifice, name, anotation]
+2016-11-18 13:21:27|INFO |HHH000108: Foreign keys: [fk_heohxmesm3ou68j85wfla5xtn, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-18 13:21:27|INFO |HHH000126: Indexes: [fk_heohxmesm3ou68j85wfla5xtn, primary, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-18 13:21:28|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-18 13:21:28|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-18 13:21:28|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-18 13:21:28|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-18 13:21:28|INFO |HHH000232: Schema update complete
+2016-11-18 13:21:28|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>901372df023ba8336089a2d5cc448870</sessionId></authorization></responce>
+2016-11-18 13:21:28|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>901372df023ba8336089a2d5cc448870</sessionId></userState></request>
+2016-11-18 13:21:28|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 13:21:28|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>901372df023ba8336089a2d5cc448870</sessionId></palnToDay></request>
+2016-11-18 13:21:28|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
