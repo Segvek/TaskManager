@@ -3193,3 +3193,48 @@
 2016-11-15 21:14:55|INFO |HHH000046: Connection properties: {user=root, password=****}
 2016-11-15 21:14:55|INFO |HHH000006: Autocommit mode: false
 2016-11-15 21:14:55|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-29 18:53:07|INFO |request |0:0:0:0:0:0:0:1|<request>            <registration>                <name>Panasenco Yuri</name>                <mail>Panasenco@outlook.com</mail>                <hashPass>admin</hashPass>            </registration>        </request>
+2016-11-29 18:53:07|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-29 18:53:07|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-29 18:53:07|INFO |HHH000206: hibernate.properties not found
+2016-11-29 18:53:07|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-29 18:53:07|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-29 18:53:07|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-29 18:53:07|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-29 18:53:08|INFO |HHH000041: Configured SessionFactory: null
+2016-11-29 18:53:08|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-29 18:53:08|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-29 18:53:08|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-29 18:53:08|INFO |HHH000006: Autocommit mode: false
+2016-11-29 18:53:08|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-29 18:53:09|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-29 18:53:09|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-29 18:53:09|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-29 18:53:10|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-29 18:53:11|INFO |HHH000227: Running hbm2ddl schema export
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table acount drop foreign key FK_e57un1oftohad5mkh5nclybmf
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.acount' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table fixing_acount drop foreign key FK_t4kybkkecx9mk2we1h72r4iww
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.fixing_acount' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table fixing_hash_acount drop foreign key FK_26e396o8t0bshlgwsldpikq37
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.fixing_hash_acount' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table fixing_hash_acount drop foreign key FK_ltlj0n2ot83vfgxoggtx5rxem
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.fixing_hash_acount' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table goal drop foreign key FK_7b7j83l6dquot72lsg25y8323
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.goal' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table item_goal_plan drop foreign key FK_bfacaqha2kfjqrwg6o08m8mre
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.item_goal_plan' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table item_goal_plan drop foreign key FK_b4gdxpqap53w6ngdxwru48ahh
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.item_goal_plan' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table item_plan_to_day drop foreign key FK_5sce36yuykcr4gdv33elbovvs
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.item_plan_to_day' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table item_plan_to_day drop foreign key FK_heohxmesm3ou68j85wfla5xtn
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.item_plan_to_day' doesn't exist
+2016-11-29 18:53:11|ERROR|HHH000389: Unsuccessful: alter table plan_to_day drop foreign key FK_2fcaxdfpxb6300y9b0sqmyf4h
+2016-11-29 18:53:11|ERROR|Table 'webservicetaskmanager.plan_to_day' doesn't exist
+2016-11-29 18:53:14|INFO |HHH000230: Schema export complete
+2016-11-29 18:53:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><registration><sessionId>420c8ac8612952581844e9787cb4b870</sessionId></registration></responce>
+2016-11-29 18:53:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>420c8ac8612952581844e9787cb4b870</sessionId></userState></request>
+2016-11-29 18:53:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>Panasenco Yuri</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-29 18:53:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>420c8ac8612952581844e9787cb4b870</sessionId></palnToDay></request>
+2016-11-29 18:53:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
