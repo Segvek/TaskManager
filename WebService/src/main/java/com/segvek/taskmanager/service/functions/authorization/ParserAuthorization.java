@@ -44,7 +44,7 @@ public class ParserAuthorization extends FunctionHandler {
     public User getUser() {
         User user = new User();
         user.setName(name);
-        user.setHashPass(hashPass);
+        user.setHashpass(hashPass);
         return user;
     }
 }

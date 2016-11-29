@@ -16,7 +16,9 @@ import com.segvek.taskmanager.service.util.HibernateUtil;
 import com.segvek.taskmanager.service.util.RandomHexCode;
 import com.segvek.taskmanager.service.util.Sender;
 import java.io.StringReader;
+import java.util.List;
 import org.hibernate.Query;
+import org.hibernate.criterion.Example;
 import org.xml.sax.InputSource;
 
 /**
@@ -57,12 +59,12 @@ public class FunctionRegistration implements Function{
      * @return 
      */
     private int getCountUserWithThisMail(String mail){
-        org.hibernate.Session sesHib = HibernateUtil.getSessionFactory().openSession();
-        Query queru =  sesHib.createQuery("FROM User Where mail like :mail");
-        queru.setParameter("mail",mail);
-        int countUser = queru.list().size();
-        sesHib.close();
-        return countUser;
+        User user = new User();
+        user.setMail(mail);
+        org.hibernate.Session sessiondao = HibernateUtil.getSessionFactory().openSession();
+        List<User> users =sessiondao.createCriteria(User.class).add(Example.create(user)).list();
+        sessiondao.close();
+        return users.size();
     }
     
     /**
