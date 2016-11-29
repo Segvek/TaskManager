@@ -8,7 +8,8 @@
         <name>YuriPanasenco</name>
         <mail>Panasenco@outlook.com</mail>
         <hashPass>12345</hashPass>
-    </registration>    
+    </registration>
+
     
         
     <!--Пример запроса на авторизацию-->
