@@ -54,7 +54,7 @@ class ParserRegistration extends DefaultHandler {
     public User getUser() {
         User user = new User();
         user.setName(name);
-        user.setHashpass(hashPass);
+        user.setHashPass(hashPass);
         user.setMail(mail);
         return user;
     }

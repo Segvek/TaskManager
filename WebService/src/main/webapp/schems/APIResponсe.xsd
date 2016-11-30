@@ -9,11 +9,51 @@
                 <xs:element name="authorization" type="Authorization" minOccurs="0"/>
                 <xs:element name="registration" type="Registration" minOccurs="0"/>
                 <xs:element name="userState" type="UserState" minOccurs="0"/>
+                <xs:element name="userGoals" type="UserGoals" minOccurs="0"/>
                 <xs:element name="error" minOccurs="0"/>
                 <!--сюда добавлять новые функции-->
             </xs:all>
         </xs:complexType>
     </xs:element>
+    
+    
+    <!--    <userGoals>
+        <goal>
+            <id>353464</id>
+            <name>Переезд в Америку</name>
+            <annotation>какое-то описание</annotation>
+            <beginDate>20.11.2016</beginDate>
+            <endDate>21.11.17</ndDate>
+            <state>Не начат</state>
+        </goal>
+    </userGoals>-->
+    
+    <xs:complexType name="UserGoals">
+        <xs:annotation>
+            <xs:documentation>
+                Этот елемент содержит информацию о пользовательских целях
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="goal" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="id"/>
+                        <xs:element name="name"/>
+                        <xs:element name="annotation"/>
+                        <xs:element name="beginDate"/>
+                        <xs:element name="endDate"/>
+                        <xs:element name="state"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    
+    
+    
     
     <xs:complexType name="Registration">
         <xs:annotation>
@@ -26,7 +66,6 @@
             <xs:element name="sessionId" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-    
     <xs:complexType name="Authorization">
         <xs:annotation>
             <xs:documentation>

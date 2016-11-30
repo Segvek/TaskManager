@@ -8,6 +8,7 @@ import com.segvek.taskmanager.service.functions.closeSession.CloseSessionFunctio
 import com.segvek.taskmanager.service.functions.creategoal.CreateGoalFunctionManager;
 import com.segvek.taskmanager.service.functions.registration.FunctionConfirmationRegistrationManager;
 import com.segvek.taskmanager.service.functions.registration.RegistrationFunctionManager;
+import com.segvek.taskmanager.service.functions.userGoals.UserGoalsFunctionManager;
 import com.segvek.taskmanager.service.functions.userState.UserStateFunctionManager;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -35,6 +36,7 @@ public class ManagerFunctionsImpl implements ManagerFunctions {
         managersFunction.add(new CloseSessionFunctionManager());
         managersFunction.add(new UserStateFunctionManager());
         managersFunction.add(new CreateGoalFunctionManager());
+        managersFunction.add(new UserGoalsFunctionManager());
     }
 
     @Override

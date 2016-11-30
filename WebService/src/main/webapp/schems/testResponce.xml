@@ -27,6 +27,24 @@
         </warnings>
     </userState>
     
+    <userGoals>
+        <goal>
+            <id>353464</id>
+            <name>Переезд в Америку</name>
+            <annotation>какое-то описание</annotation>
+            <beginDate>20.11.2016</beginDate>
+            <endDate>21.11.17</endDate>
+            <state>Не начат</state>
+        </goal>
+        <goal>
+            <id>353464</id>
+            <name>Переезд в Америку</name>
+            <annotation>какое-то описание</annotation>
+            <beginDate>20.11.2016</beginDate>
+            <endDate>21.11.17</endDate>
+            <state>Не начат</state>
+        </goal>
+    </userGoals>
 <!--    <palnToDay>
         <item>
             <id>1fdgb</id>

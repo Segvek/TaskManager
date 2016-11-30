@@ -6,7 +6,6 @@
 package com.segvek.taskmanager.service.functions.registration;
 
 import com.segvek.taskmanager.service.Function;
-import com.segvek.taskmanager.service.dao.DaoFactory;
 import com.segvek.taskmanager.service.session.Session;
 import com.segvek.taskmanager.service.session.SessionManager;
 import com.segvek.taskmanager.service.session.impl.SessionManagerImpl;
@@ -16,9 +15,9 @@ import com.segvek.taskmanager.service.util.HibernateUtil;
 import com.segvek.taskmanager.service.util.RandomHexCode;
 import com.segvek.taskmanager.service.util.Sender;
 import java.io.StringReader;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import org.hibernate.Query;
-import org.hibernate.criterion.Example;
 import org.xml.sax.InputSource;
 
 /**
@@ -38,7 +37,16 @@ public class FunctionRegistration implements Function{
         
         user.setConfirmation(RandomHexCode.getHex());
         Sender.send("You`r key: "+user.getConfirmation(), user.getMail());
-        DaoFactory.getFactory().getDaoUser().addEntity(user);
+        
+        Date d = new Date();
+        SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy");
+        user.setDateRegistration(format1.format(d));
+        
+        org.hibernate.Session hses = HibernateUtil.getSessionFactory().openSession();
+        hses.beginTransaction();
+        hses.save(user);
+        hses.getTransaction().commit();
+        hses.close();
         
         SessionManager sessionManager = SessionManagerImpl.getInstance();
 //        Object tempObj = SpringUtil.getInstance().getBean("sessionManager");
@@ -49,7 +57,7 @@ public class FunctionRegistration implements Function{
 //        }
 
         Session session = sessionManager.createSession();
-        session.setAttribute("user", user);
+        session.setAttribute("user", user.getId());
         return    "<registration><sessionId>" + session.getIdSession() + "</sessionId></registration>";
     }
     
@@ -59,12 +67,12 @@ public class FunctionRegistration implements Function{
      * @return 
      */
     private int getCountUserWithThisMail(String mail){
-        User user = new User();
-        user.setMail(mail);
-        org.hibernate.Session sessiondao = HibernateUtil.getSessionFactory().openSession();
-        List<User> users =sessiondao.createCriteria(User.class).add(Example.create(user)).list();
-        sessiondao.close();
-        return users.size();
+        org.hibernate.Session sesHib = HibernateUtil.getSessionFactory().openSession();
+        Query queru =  sesHib.createQuery("FROM User Where mail like :mail");
+        queru.setParameter("mail",mail);
+        int countUser = queru.list().size();
+        sesHib.close();
+        return countUser;
     }
     
     /**

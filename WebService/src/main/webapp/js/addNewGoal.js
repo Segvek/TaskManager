@@ -66,12 +66,11 @@ var createNewGoal = function (){
     
     var goal = {goalName:goalName,anotation:anotation,bdate:bdate,edate:edate,plan:listItemPlanToNewGoal};
     saveNewGoal(goal);
-    point071120161153();
 }
 var saveNewGoal = function (goal){
     var sessionID = getCookie("sessionID");    
     //генерация запроса
-    var request = "<request><createGoal><sessionId>"+sessionID+"</sessionId><name>"+goal.goalName+"</name><anotation>"+goal.anotation+"</anotation><beginDate>"+goal.bdate+"</beginDate><endDate>"+goal.edate+"</endDate><plan>";
+    let request = "<request><createGoal><sessionId>"+sessionID+"</sessionId><name>"+goal.goalName+"</name><anotation>"+goal.anotation+"</anotation><beginDate>"+goal.bdate+"</beginDate><endDate>"+goal.edate+"</endDate><plan>";
     for(var i=0; i<goal.plan.length; i++){
         var it = goal.plan[i];
         request+="<item><number>"+i+"</number><name>"+it.name+"</name><beginDate>"+it.beginDate+"</beginDate><endDate>"+it.endDate+"</endDate>";
@@ -80,16 +79,8 @@ var saveNewGoal = function (goal){
         request+="</item>";
     }      
     request+="</plan></createGoal></request>";
-    console.log(request);
     requestSender("API", request, function (xmlResponce) {
-//        let xml = $.parseXML(xmlResponce);
-//        if (xml.getElementsByTagName('error').length != 0) {
-//            $('#form-autorithation [type="text"], #form-autorithation [type="password"]').css('boxShadow', '0px 0px 10px red');
-//            return;
-//        }
-//        document.cookie = "sessionID=" + $(xml).find('sessionId').text();
-//        isAuthorization();
-        console.log(xmlResponce);
+        point071120161153();
     });
     
 }

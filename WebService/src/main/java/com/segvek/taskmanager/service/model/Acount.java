@@ -5,73 +5,45 @@
  */
 package com.segvek.taskmanager.service.model;
 
-import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
-/**
- *
- * @author Panas
- */
+
 @Entity
-@Table(name = "acount")
-@XmlRootElement
-@NamedQueries({
-    @NamedQuery(name = "Acount.findAll", query = "SELECT a FROM Acount a")
-    , @NamedQuery(name = "Acount.findById", query = "SELECT a FROM Acount a WHERE a.id = :id")
-    , @NamedQuery(name = "Acount.findByName", query = "SELECT a FROM Acount a WHERE a.name = :name")})
-public class Acount implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
-    @Column(name = "id")
-    private Long id;
-    @Lob
-    @Size(max = 2147483647)
-    @Column(name = "annitation")
-    private String annitation;
-    @Size(max = 150)
-    @Column(name = "name")
+@Table(name="acount")
+public class Acount extends Model {
+    
+    @Column(name = "name",length = 150)
     private String name;
-    @OneToMany(mappedBy = "acountId", fetch = FetchType.LAZY)
-    private List<FixingHashAcount> fixingHashAcountList;
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User userId;
-    @OneToMany(mappedBy = "acountId", fetch = FetchType.LAZY)
-    private List<ItemGoalPlan> itemGoalPlanList;
-
-    public Acount() {
+    
+    @Column(name = "annitation",length = 1500)
+    private String annitation;
+    
+    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "acount")
+    private List<FixingHashAcount> fha = new ArrayList<>();
+    
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+    
+    @OneToOne(mappedBy = "acount",fetch = FetchType.LAZY)
+    private ItemGoalPlan itemGoalPlan;
+    
+    public String getName() {
+        return name;
     }
 
-    public Acount(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAnnitation() {
@@ -82,63 +54,30 @@ public class Acount implements Serializable {
         this.annitation = annitation;
     }
 
-    public String getName() {
-        return name;
+    public List<FixingHashAcount> getFha() {
+        return fha;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFha(List<FixingHashAcount> fha) {
+        this.fha = fha;
     }
 
-    @XmlTransient
-    public List<FixingHashAcount> getFixingHashAcountList() {
-        return fixingHashAcountList;
+    public User getUser() {
+        return user;
     }
 
-    public void setFixingHashAcountList(List<FixingHashAcount> fixingHashAcountList) {
-        this.fixingHashAcountList = fixingHashAcountList;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public User getUserId() {
-        return userId;
+    public ItemGoalPlan getItemGoalPlan() {
+        return itemGoalPlan;
     }
 
-    public void setUserId(User userId) {
-        this.userId = userId;
+    public void setItemGoalPlan(ItemGoalPlan itemGoalPlan) {
+        this.itemGoalPlan = itemGoalPlan;
     }
 
-    @XmlTransient
-    public List<ItemGoalPlan> getItemGoalPlanList() {
-        return itemGoalPlanList;
-    }
-
-    public void setItemGoalPlanList(List<ItemGoalPlan> itemGoalPlanList) {
-        this.itemGoalPlanList = itemGoalPlanList;
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Acount)) {
-            return false;
-        }
-        Acount other = (Acount) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "com.segvek.taskmanager.service.model.Acount[ id=" + id + " ]";
-    }
     
+
 }

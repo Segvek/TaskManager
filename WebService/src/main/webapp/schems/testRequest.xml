@@ -9,9 +9,7 @@
         <mail>Panasenco@outlook.com</mail>
         <hashPass>12345</hashPass>
     </registration>
-
     
-        
     <!--Пример запроса на авторизацию-->
     <authorization>
         <name>ebtb</name>
@@ -20,6 +18,7 @@
     
     <!--Пример запроса для подтверждения регистрации-->
     <confirmation>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
         <key>uijonuhibjonot6f5ft7</key>
     </confirmation>
     
@@ -46,7 +45,21 @@
             </item>
         </plan>
     </createGoal>
+
+    <!--пример запроса на закрытие сесии-->
+    <closeSession>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+    </closeSession>
     
+    <!--пример запроса на получение информации о пользователе-->
+    <userState>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+    </userState>
+    
+    <!--пример запроса на получение списка пользовательских целей-->
+    <userGoals>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+    </userGoals>
     
     <!--пример запроса на содание плана на завтра-->
 <!--    <createPlanToDay>
@@ -69,13 +82,7 @@
         </plan>
     </createPlanToDay>-->
     
-    <closeSession>
-        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
-    </closeSession>
     
-    <userState>
-        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
-    </userState>
     
     <palnToDay>
         <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>

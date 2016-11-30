@@ -14,8 +14,6 @@ import com.segvek.taskmanager.service.util.HibernateUtil;
 import com.segvek.taskmanager.service.util.SAXParserUtil;
 import java.io.StringReader;
 import java.util.List;
-import javax.persistence.Query;
-import javax.persistence.criteria.Expression;
 import org.hibernate.criterion.Example;
 import org.xml.sax.InputSource;
 
@@ -53,7 +51,7 @@ public class AuthorizationFunction implements Function {
         if (users.size()>0) {
             user = users.get(0);
             Session session = sessionManager.createSession();
-            session.setAttribute("user", user);
+            session.setAttribute("user", user.getId());
             return "<authorization><sessionId>" + session.getIdSession() + "</sessionId></authorization>";
         } else {
             return "<error>User not found</error>";

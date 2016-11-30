@@ -29,6 +29,7 @@ public class CreateGoalHandler extends FunctionHandler {
         thisElement = qName;
         if (thisElement.equals("item")) {
             igp = new ItemGoalPlan();
+            igp.setGoal(goal);
             thisItem = true;
         }
     }
@@ -37,7 +38,7 @@ public class CreateGoalHandler extends FunctionHandler {
     public void endElement(String uri, String localName, String qName) throws SAXException {
         super.endElement(uri, localName, qName); //To change body of generated methods, choose Tools | Templates.
         if (qName.equals("item") && thisItem) {
-            goal.getItemGoalPlanList().add(igp);
+            goal.getItemGoalPlan().add(igp);
             thisItem = false;
         }
     }
