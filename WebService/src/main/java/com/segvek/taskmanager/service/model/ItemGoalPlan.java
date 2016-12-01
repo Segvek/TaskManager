@@ -14,7 +14,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 
@@ -33,6 +32,9 @@ public class ItemGoalPlan extends Model {
     
     @Column(name="end_date")
     private String endDate;
+    
+    @Column(name="state")
+    private String state="Не начат";
     
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "itemGoalPlan")
     private List<ItemPlanToDay> itemsPlanToDay = new ArrayList<>();
@@ -101,5 +103,14 @@ public class ItemGoalPlan extends Model {
         this.goal = goal;
     }
 
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    
     
 }

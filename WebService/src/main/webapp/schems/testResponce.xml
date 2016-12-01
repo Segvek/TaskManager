@@ -45,6 +45,33 @@
             <state>Не начат</state>
         </goal>
     </userGoals>
+    
+    <goalInfo>
+        <name>vfd</name>
+        <annotation>retyujrgefrgthy</annotation>
+        <beginDate></beginDate>
+        <endDate></endDate>
+        <state></state>
+        <plan>
+            <item>
+                <id>353464</id>
+                <name>Переезд в Америку</name>
+                <annotation>какое-то описание</annotation>
+                <beginDate>20.11.2016</beginDate>
+                <endDate>21.11.17</endDate>
+                <state>Не начат</state>
+            </item>
+            <item>
+                <id>353464</id>
+                <name>Переезд в Америку</name>
+                <annotation>какое-то описание</annotation>
+                <beginDate>20.11.2016</beginDate>
+                <endDate>21.11.17</endDate>
+                <state>Не начат</state>
+            </item>
+        </plan>
+    </goalInfo>
+    
 <!--    <palnToDay>
         <item>
             <id>1fdgb</id>

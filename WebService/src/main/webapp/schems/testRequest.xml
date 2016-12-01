@@ -15,13 +15,7 @@
         <name>ebtb</name>
         <hashPass>sdfvrf</hashPass>
     </authorization>
-    
-    <!--Пример запроса для подтверждения регистрации-->
-    <confirmation>
-        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
-        <key>uijonuhibjonot6f5ft7</key>
-    </confirmation>
-    
+        
     <!--пример запроса на создание цели-->
     <createGoal>
         <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
@@ -61,6 +55,21 @@
         <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
     </userGoals>
     
+    <!--пример запроса на получение отчета по конкретной цели-->
+    <goalInfo>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+        <golaID>234</golaID>
+    </goalInfo>
+    
+    
+    
+    
+    
+    <!--Пример запроса для подтверждения регистрации-->
+    <confirmation>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+        <key>uijonuhibjonot6f5ft7</key>
+    </confirmation>
     <!--пример запроса на содание плана на завтра-->
 <!--    <createPlanToDay>
         <date>04.09.2016</date>дата на когда создается план
