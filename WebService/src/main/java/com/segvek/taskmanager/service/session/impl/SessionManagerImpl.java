@@ -5,7 +5,6 @@
  */
 package com.segvek.taskmanager.service.session.impl;
 
-import com.segvek.taskmanager.service.model.User;
 import com.segvek.taskmanager.service.session.Session;
 import com.segvek.taskmanager.service.session.SessionManager;
 import java.util.concurrent.ConcurrentHashMap;

@@ -6,6 +6,7 @@ import com.segvek.taskmanager.service.ManagerFunctions;
 import com.segvek.taskmanager.service.functions.authorization.AuthorizationFunctionManager;
 import com.segvek.taskmanager.service.functions.closeSession.CloseSessionFunctionManager;
 import com.segvek.taskmanager.service.functions.creategoal.CreateGoalFunctionManager;
+import com.segvek.taskmanager.service.functions.goalinfo.GoalInfoFunctionManager;
 import com.segvek.taskmanager.service.functions.registration.FunctionConfirmationRegistrationManager;
 import com.segvek.taskmanager.service.functions.registration.RegistrationFunctionManager;
 import com.segvek.taskmanager.service.functions.userGoals.UserGoalsFunctionManager;
@@ -37,6 +38,7 @@ public class ManagerFunctionsImpl implements ManagerFunctions {
         managersFunction.add(new UserStateFunctionManager());
         managersFunction.add(new CreateGoalFunctionManager());
         managersFunction.add(new UserGoalsFunctionManager());
+        managersFunction.add(new GoalInfoFunctionManager());
     }
 
     @Override

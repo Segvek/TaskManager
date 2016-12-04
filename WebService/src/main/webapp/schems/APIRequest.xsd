@@ -172,6 +172,19 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                 <xs:element name="goalInfo" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Данная функция предназначена для получение информации о цели
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sessionId"/>
+                            <xs:element name="golaID"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <!--сюда добавлять новые функции-->
             </xs:all>
         </xs:complexType>

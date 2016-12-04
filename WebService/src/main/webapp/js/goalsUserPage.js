@@ -11,14 +11,15 @@ var goalUserPage = function (){
         }
         let htmltext = "";
         for (let i = 0; i < xml.getElementsByTagName('goal').length; i++) {
-            let mess = xml.getElementsByTagName('goal')[i];
+            let goal = xml.getElementsByTagName('goal')[i];
             let viewItemUserGoal = new View("IncludeView/ViewItemUserGoals.html");
             viewItemUserGoal.setAttribut("nomber",i+1);
-            viewItemUserGoal.setAttribut("name",$(mess).find('name').text());
-            viewItemUserGoal.setAttribut("anotation",$(mess).find('annotation').text());
-            viewItemUserGoal.setAttribut("beginDate",$(mess).find('beginDate').text());
-            viewItemUserGoal.setAttribut("endDate",$(mess).find('endDate').text());
-            viewItemUserGoal.setAttribut("state",$(mess).find('state').text());
+            viewItemUserGoal.setAttribut("name",$(goal).find('name').text());
+            viewItemUserGoal.setAttribut("anotation",$(goal).find('annotation').text());
+            viewItemUserGoal.setAttribut("beginDate",$(goal).find('beginDate').text());
+            viewItemUserGoal.setAttribut("endDate",$(goal).find('endDate').text());
+            viewItemUserGoal.setAttribut("state",$(goal).find('state').text());
+            viewItemUserGoal.setAttribut("idGoal",$(goal).find('id').text());
             htmltext += viewItemUserGoal.getHTML();
         }
         viewGoalsPage.setAttribut("items",htmltext);
@@ -29,4 +30,12 @@ var goalUserPage = function (){
 
 var ClickLinkAddNewGoalOnPageViewGoals = function(){
     addNewGoal(goalUserPage);
+}
+
+var showDetaliesGoal = function(idGoal){
+    let request = "<request><goalInfo><sessionId>" +getCookie("sessionID") + "</sessionId><golaID>"+idGoal+"</golaID></goalInfo></request>";
+    console.log(request);
+    requestSender("API", request, function (xmlResponce) {
+            console.log(xmlResponce);
+    });
 }
