@@ -174,3 +174,658 @@
 2016-12-01 22:13:23|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
 2016-12-01 22:13:27|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>ff5559aaaa504f23cdffb52db7c2e880</sessionId></userGoals></request>
 2016-12-01 22:13:27|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>10</id><name>My Goal 1</name><annotation>Annotation goal 1</annotation><beginDate>11/01/2016</beginDate><endDate>11/30/2016</endDate><state>?? ?????</state></goal><goal><id>11</id><name>jlk,</name><annotation>yiuonk;m</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-02 11:23:32|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>ff5559aaaa504f23cdffb52db7c2e880</sessionId></userState></request>
+2016-12-02 11:23:32|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-12-02 11:23:46|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-02 11:23:47|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 11:23:47|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-02 11:23:47|INFO |HHH000206: hibernate.properties not found
+2016-12-02 11:23:47|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-02 11:23:47|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-02 11:23:47|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-02 11:23:47|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-02 11:23:47|INFO |HHH000041: Configured SessionFactory: null
+2016-12-02 11:23:48|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-02 11:23:48|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-02 11:23:48|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-02 11:23:48|INFO |HHH000006: Autocommit mode: false
+2016-12-02 11:23:48|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-02 11:23:49|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 11:23:49|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-02 11:23:49|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 11:23:50|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-02 11:23:51|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-02 11:23:51|INFO |HHH000102: Fetching database metadata
+2016-12-02 11:23:51|INFO |HHH000396: Updating schema
+2016-12-02 11:23:51|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-02 11:23:51|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-02 11:23:51|INFO |HHH000108: Foreign keys: []
+2016-12-02 11:23:51|INFO |HHH000126: Indexes: [primary]
+2016-12-02 11:23:51|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-02 11:23:51|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-02 11:23:51|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-02 11:23:51|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-02 11:23:51|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-02 11:23:51|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-02 11:23:51|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-02 11:23:51|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-02 11:23:51|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-02 11:23:51|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-02 11:23:51|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-02 11:23:51|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-02 11:23:51|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-02 11:23:51|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-02 11:23:51|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-02 11:23:51|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-02 11:23:52|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-02 11:23:52|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-02 11:23:52|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-02 11:23:52|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-02 11:23:52|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-02 11:23:52|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-02 11:23:52|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-02 11:23:52|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-02 11:23:52|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-02 11:23:52|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-02 11:23:52|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-02 11:23:52|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-02 11:23:52|INFO |HHH000232: Schema update complete
+2016-12-02 11:23:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></authorization></responce>
+2016-12-02 11:23:52|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userState></request>
+2016-12-02 11:23:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-02 11:23:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></palnToDay></request>
+2016-12-02 11:23:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:23:59|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userGoals></request>
+2016-12-02 11:23:59|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-02 11:24:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></palnToDay></request>
+2016-12-02 11:24:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:24:23|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userGoals></request>
+2016-12-02 11:24:23|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-02 11:24:37|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></palnToDay></request>
+2016-12-02 11:24:37|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:34:25|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userState></request>
+2016-12-02 11:34:25|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-02 11:34:25|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></palnToDay></request>
+2016-12-02 11:34:25|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:34:26|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userGoals></request>
+2016-12-02 11:34:26|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-02 11:34:35|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId><golaID>8</golaID></goalInfo></request>
+2016-12-02 11:34:35|INFO |responce|0:0:0:0:0:0:0:1|<error>error valid(load) schem requesrAPI.xsd</error>
+2016-12-02 11:35:35|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userState></request>
+2016-12-02 11:35:35|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-02 11:35:35|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></palnToDay></request>
+2016-12-02 11:35:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:35:38|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userGoals></request>
+2016-12-02 11:35:38|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-02 11:35:40|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-02 11:35:40|INFO |responce|0:0:0:0:0:0:0:1|<error>error valid(load) schem requesrAPI.xsd</error>
+2016-12-02 11:38:43|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userState></request>
+2016-12-02 11:38:43|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-02 11:38:43|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></palnToDay></request>
+2016-12-02 11:38:43|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:38:47|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userGoals></request>
+2016-12-02 11:38:47|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-02 11:38:49|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-02 11:38:49|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:38:54|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-02 11:38:54|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:38:58|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId><golaID>8</golaID></goalInfo></request>
+2016-12-02 11:38:58|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:51:18|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>b5ab26fc1dd8d40db0fdc12847bebfa6</sessionId></userState></request>
+2016-12-02 11:51:18|INFO |responce|0:0:0:0:0:0:0:1|<responce><error>Session not found</error></responce>
+2016-12-02 11:51:31|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-02 11:51:31|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 11:51:31|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-02 11:51:31|INFO |HHH000206: hibernate.properties not found
+2016-12-02 11:51:31|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-02 11:51:31|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-02 11:51:31|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-02 11:51:31|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-02 11:51:31|INFO |HHH000041: Configured SessionFactory: null
+2016-12-02 11:51:32|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-02 11:51:32|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-02 11:51:32|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-02 11:51:32|INFO |HHH000006: Autocommit mode: false
+2016-12-02 11:51:32|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-02 11:51:32|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 11:51:33|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-02 11:51:33|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 11:51:33|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-02 11:51:35|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-02 11:51:35|INFO |HHH000102: Fetching database metadata
+2016-12-02 11:51:35|INFO |HHH000396: Updating schema
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: []
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-02 11:51:35|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-02 11:51:35|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-02 11:51:35|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-02 11:51:35|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-02 11:51:35|INFO |HHH000232: Schema update complete
+2016-12-02 11:51:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>20c644a45b64a2dcf5c3b7904842419b</sessionId></authorization></responce>
+2016-12-02 11:51:36|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>20c644a45b64a2dcf5c3b7904842419b</sessionId></userState></request>
+2016-12-02 11:51:36|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-02 11:51:36|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>20c644a45b64a2dcf5c3b7904842419b</sessionId></palnToDay></request>
+2016-12-02 11:51:36|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-02 11:51:38|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>20c644a45b64a2dcf5c3b7904842419b</sessionId></userGoals></request>
+2016-12-02 11:51:38|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-02 11:51:39|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>20c644a45b64a2dcf5c3b7904842419b</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-02 11:51:39|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:46:19|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-04 14:46:20|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-04 14:46:20|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-04 14:46:20|INFO |HHH000206: hibernate.properties not found
+2016-12-04 14:46:20|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-04 14:46:20|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-04 14:46:20|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-04 14:46:20|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-04 14:46:20|INFO |HHH000041: Configured SessionFactory: null
+2016-12-04 14:46:20|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-04 14:46:20|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-04 14:46:20|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-04 14:46:20|INFO |HHH000006: Autocommit mode: false
+2016-12-04 14:46:20|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-04 14:46:21|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-04 14:46:22|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-04 14:46:22|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-04 14:46:22|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-04 14:46:23|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-04 14:46:23|INFO |HHH000102: Fetching database metadata
+2016-12-04 14:46:23|INFO |HHH000396: Updating schema
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: []
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-04 14:46:24|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-04 14:46:24|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:46:24|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-04 14:46:24|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-04 14:46:24|INFO |HHH000232: Schema update complete
+2016-12-04 14:46:24|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>9605d3958eac42cead6d21f8e66db71e</sessionId></authorization></responce>
+2016-12-04 14:46:24|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>9605d3958eac42cead6d21f8e66db71e</sessionId></userState></request>
+2016-12-04 14:46:25|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-04 14:46:25|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>9605d3958eac42cead6d21f8e66db71e</sessionId></palnToDay></request>
+2016-12-04 14:46:25|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:47:01|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>9605d3958eac42cead6d21f8e66db71e</sessionId></userGoals></request>
+2016-12-04 14:47:01|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-04 14:47:04|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>9605d3958eac42cead6d21f8e66db71e</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-04 14:47:04|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:49:22|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>9605d3958eac42cead6d21f8e66db71e</sessionId></closeSession></request>
+2016-12-04 14:49:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>session not found</closeSession></responce>
+2016-12-04 14:49:24|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-04 14:49:25|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-04 14:49:25|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-04 14:49:25|INFO |HHH000206: hibernate.properties not found
+2016-12-04 14:49:25|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-04 14:49:25|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-04 14:49:25|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-04 14:49:25|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-04 14:49:25|INFO |HHH000041: Configured SessionFactory: null
+2016-12-04 14:49:25|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-04 14:49:25|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-04 14:49:25|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-04 14:49:25|INFO |HHH000006: Autocommit mode: false
+2016-12-04 14:49:25|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-04 14:49:26|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-04 14:49:26|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-04 14:49:26|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-04 14:49:26|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-04 14:49:28|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-04 14:49:28|INFO |HHH000102: Fetching database metadata
+2016-12-04 14:49:28|INFO |HHH000396: Updating schema
+2016-12-04 14:49:28|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-04 14:49:28|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-04 14:49:28|INFO |HHH000108: Foreign keys: []
+2016-12-04 14:49:28|INFO |HHH000126: Indexes: [primary]
+2016-12-04 14:49:28|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-04 14:49:28|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-04 14:49:28|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-04 14:49:28|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-04 14:49:28|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-04 14:49:28|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:49:28|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-04 14:49:28|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-04 14:49:28|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-04 14:49:28|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-04 14:49:28|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-04 14:49:28|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-04 14:49:28|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-04 14:49:28|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-04 14:49:28|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-04 14:49:28|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-04 14:49:28|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-04 14:49:28|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-04 14:49:28|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-04 14:49:28|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-04 14:49:29|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-04 14:49:29|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-04 14:49:29|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-04 14:49:29|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-04 14:49:29|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-04 14:49:29|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:49:29|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-04 14:49:29|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-04 14:49:29|INFO |HHH000232: Schema update complete
+2016-12-04 14:49:29|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>184d0116f3e4dda45e77c1761697f5af</sessionId></authorization></responce>
+2016-12-04 14:49:29|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>184d0116f3e4dda45e77c1761697f5af</sessionId></userState></request>
+2016-12-04 14:49:29|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-04 14:49:29|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>184d0116f3e4dda45e77c1761697f5af</sessionId></palnToDay></request>
+2016-12-04 14:49:29|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:49:32|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>184d0116f3e4dda45e77c1761697f5af</sessionId></userGoals></request>
+2016-12-04 14:49:32|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-04 14:49:35|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>184d0116f3e4dda45e77c1761697f5af</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-04 14:49:35|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:51:08|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>184d0116f3e4dda45e77c1761697f5af</sessionId></closeSession></request>
+2016-12-04 14:51:08|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>session not found</closeSession></responce>
+2016-12-04 14:51:10|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-04 14:51:11|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-04 14:51:11|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-04 14:51:11|INFO |HHH000206: hibernate.properties not found
+2016-12-04 14:51:11|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-04 14:51:11|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-04 14:51:11|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-04 14:51:11|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-04 14:51:11|INFO |HHH000041: Configured SessionFactory: null
+2016-12-04 14:51:11|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-04 14:51:11|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-04 14:51:11|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-04 14:51:11|INFO |HHH000006: Autocommit mode: false
+2016-12-04 14:51:11|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-04 14:51:12|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-04 14:51:12|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-04 14:51:12|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-04 14:51:12|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-04 14:51:13|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-04 14:51:13|INFO |HHH000102: Fetching database metadata
+2016-12-04 14:51:13|INFO |HHH000396: Updating schema
+2016-12-04 14:51:13|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-04 14:51:13|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-04 14:51:13|INFO |HHH000108: Foreign keys: []
+2016-12-04 14:51:13|INFO |HHH000126: Indexes: [primary]
+2016-12-04 14:51:13|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-04 14:51:13|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-04 14:51:13|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-04 14:51:13|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-04 14:51:14|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-04 14:51:14|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:51:14|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-04 14:51:14|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-04 14:51:14|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-04 14:51:14|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-04 14:51:14|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-04 14:51:14|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-04 14:51:14|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-04 14:51:14|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-04 14:51:14|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-04 14:51:14|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-04 14:51:14|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-04 14:51:14|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-04 14:51:14|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-04 14:51:14|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-04 14:51:14|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-04 14:51:14|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-04 14:51:14|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-04 14:51:14|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-04 14:51:14|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-04 14:51:14|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:51:14|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-04 14:51:14|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-04 14:51:14|INFO |HHH000232: Schema update complete
+2016-12-04 14:51:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>18ff47c7de0eafc3d35543b6f3463548</sessionId></authorization></responce>
+2016-12-04 14:51:14|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>18ff47c7de0eafc3d35543b6f3463548</sessionId></userState></request>
+2016-12-04 14:51:14|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-04 14:51:14|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>18ff47c7de0eafc3d35543b6f3463548</sessionId></palnToDay></request>
+2016-12-04 14:51:14|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:51:17|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>18ff47c7de0eafc3d35543b6f3463548</sessionId></userGoals></request>
+2016-12-04 14:51:17|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-04 14:51:19|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>18ff47c7de0eafc3d35543b6f3463548</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-04 14:51:19|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:57:00|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-04 14:57:01|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-04 14:57:01|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-04 14:57:01|INFO |HHH000206: hibernate.properties not found
+2016-12-04 14:57:01|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-04 14:57:01|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-04 14:57:01|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-04 14:57:01|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-04 14:57:01|INFO |HHH000041: Configured SessionFactory: null
+2016-12-04 14:57:01|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-04 14:57:01|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-04 14:57:01|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-04 14:57:01|INFO |HHH000006: Autocommit mode: false
+2016-12-04 14:57:01|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-04 14:57:02|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-04 14:57:02|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-04 14:57:03|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-04 14:57:03|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-04 14:57:04|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-04 14:57:04|INFO |HHH000102: Fetching database metadata
+2016-12-04 14:57:04|INFO |HHH000396: Updating schema
+2016-12-04 14:57:04|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-04 14:57:04|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-04 14:57:04|INFO |HHH000108: Foreign keys: []
+2016-12-04 14:57:04|INFO |HHH000126: Indexes: [primary]
+2016-12-04 14:57:04|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-04 14:57:04|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-04 14:57:04|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-04 14:57:04|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-04 14:57:04|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-04 14:57:04|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:57:04|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-04 14:57:04|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-04 14:57:05|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-04 14:57:05|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-04 14:57:05|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-04 14:57:05|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-04 14:57:05|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-04 14:57:05|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-04 14:57:05|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-04 14:57:05|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-04 14:57:05|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-04 14:57:05|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-04 14:57:05|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-04 14:57:05|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-04 14:57:05|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-04 14:57:05|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-04 14:57:05|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-04 14:57:05|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-04 14:57:05|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-04 14:57:05|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:57:05|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-04 14:57:05|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-04 14:57:05|INFO |HHH000232: Schema update complete
+2016-12-04 14:57:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>d19d604b221b9637959384dcfdfaa37f</sessionId></authorization></responce>
+2016-12-04 14:57:05|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>d19d604b221b9637959384dcfdfaa37f</sessionId></userState></request>
+2016-12-04 14:57:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-04 14:57:05|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>d19d604b221b9637959384dcfdfaa37f</sessionId></palnToDay></request>
+2016-12-04 14:57:05|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:57:07|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>d19d604b221b9637959384dcfdfaa37f</sessionId></userGoals></request>
+2016-12-04 14:57:08|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-04 14:57:11|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>d19d604b221b9637959384dcfdfaa37f</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-04 14:57:11|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:59:05|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>d19d604b221b9637959384dcfdfaa37f</sessionId></closeSession></request>
+2016-12-04 14:59:05|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>session not found</closeSession></responce>
+2016-12-04 14:59:07|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-04 14:59:07|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-04 14:59:07|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-04 14:59:07|INFO |HHH000206: hibernate.properties not found
+2016-12-04 14:59:07|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-04 14:59:07|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-04 14:59:07|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-04 14:59:07|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-04 14:59:07|INFO |HHH000041: Configured SessionFactory: null
+2016-12-04 14:59:08|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-04 14:59:08|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-04 14:59:08|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-04 14:59:08|INFO |HHH000006: Autocommit mode: false
+2016-12-04 14:59:08|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-04 14:59:09|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-04 14:59:09|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-04 14:59:09|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-04 14:59:10|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-04 14:59:11|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-04 14:59:11|INFO |HHH000102: Fetching database metadata
+2016-12-04 14:59:11|INFO |HHH000396: Updating schema
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: []
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [primary]
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-04 14:59:11|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-04 14:59:11|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-04 14:59:11|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-04 14:59:11|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-04 14:59:12|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-04 14:59:12|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 14:59:12|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-04 14:59:12|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-04 14:59:12|INFO |HHH000232: Schema update complete
+2016-12-04 14:59:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></authorization></responce>
+2016-12-04 14:59:12|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></userState></request>
+2016-12-04 14:59:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-04 14:59:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></palnToDay></request>
+2016-12-04 14:59:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 14:59:15|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></userGoals></request>
+2016-12-04 14:59:15|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-04 14:59:16|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-04 14:59:17|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state><plan></plan></goalInfo></responce>
+2016-12-04 14:59:22|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId><golaID>7</golaID></goalInfo></request>
+2016-12-04 14:59:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state><plan></plan></goalInfo></responce>
+2016-12-04 15:00:44|INFO |request |0:0:0:0:0:0:0:1|<request><closeSession> <sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></closeSession></request>
+2016-12-04 15:00:44|INFO |responce|0:0:0:0:0:0:0:1|<responce><closeSession>session not found</closeSession></responce>
+2016-12-04 15:00:47|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-04 15:00:48|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-04 15:00:48|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-04 15:00:48|INFO |HHH000206: hibernate.properties not found
+2016-12-04 15:00:48|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-04 15:00:48|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-04 15:00:48|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-04 15:00:48|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-04 15:00:48|INFO |HHH000041: Configured SessionFactory: null
+2016-12-04 15:00:48|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-04 15:00:48|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-04 15:00:48|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-04 15:00:48|INFO |HHH000006: Autocommit mode: false
+2016-12-04 15:00:48|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-04 15:00:49|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-04 15:00:49|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-04 15:00:49|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-04 15:00:50|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-04 15:00:51|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-04 15:00:51|INFO |HHH000102: Fetching database metadata
+2016-12-04 15:00:51|INFO |HHH000396: Updating schema
+2016-12-04 15:00:51|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-04 15:00:51|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-04 15:00:51|INFO |HHH000108: Foreign keys: []
+2016-12-04 15:00:51|INFO |HHH000126: Indexes: [primary]
+2016-12-04 15:00:51|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-04 15:00:51|INFO |HHH000037: Columns: [annitation, user_id, name, id]
+2016-12-04 15:00:51|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-04 15:00:51|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-04 15:00:51|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-04 15:00:51|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 15:00:51|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-04 15:00:51|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-04 15:00:52|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-04 15:00:52|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-04 15:00:52|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-04 15:00:52|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-04 15:00:52|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-04 15:00:52|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-04 15:00:52|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-04 15:00:52|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-04 15:00:52|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-04 15:00:52|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-04 15:00:52|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-04 15:00:52|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-04 15:00:52|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-04 15:00:52|INFO |HHH000037: Columns: [anotation, plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-04 15:00:52|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-04 15:00:52|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-04 15:00:52|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-04 15:00:52|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-04 15:00:52|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-04 15:00:52|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-04 15:00:52|INFO |HHH000232: Schema update complete
+2016-12-04 15:00:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></authorization></responce>
+2016-12-04 15:00:52|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></userState></request>
+2016-12-04 15:00:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-04 15:00:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></palnToDay></request>
+2016-12-04 15:00:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-04 15:00:55|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></userGoals></request>
+2016-12-04 15:00:55|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal></userGoals></responce>
+2016-12-04 15:01:06|INFO |request |0:0:0:0:0:0:0:1|<request><createGoal><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId><name>ujvgh</name><anotation>ycgjvh kn,</anotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><plan><item><number>0</number><name>tujl</name><beginDate>12/06/2016</beginDate><endDate>12/28/2016</endDate><idAcount>4</idAcount></item></plan></createGoal></request>
+2016-12-04 15:01:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><createGoal>ok</createGoal></responce>
+2016-12-04 15:01:06|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId></userGoals></request>
+2016-12-04 15:01:06|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-04 15:01:10|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>35182a09676f2f47d175475586ea5f2a</sessionId><golaID>12</golaID></goalInfo></request>
+2016-12-04 15:01:10|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state><plan><item><id>11</id><name>tujl</name><annotation>null</annotation><beginDate>12/06/2016</beginDate><endDate>12/28/2016</endDate><state>?? ?????</state></item></plan></goalInfo></responce>
+2016-12-14 00:04:08|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-12-14 00:04:10|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-14 00:04:10|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-12-14 00:04:10|INFO |HHH000206: hibernate.properties not found
+2016-12-14 00:04:10|INFO |HHH000021: Bytecode provider name : javassist
+2016-12-14 00:04:10|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-12-14 00:04:10|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-12-14 00:04:11|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-12-14 00:04:11|INFO |HHH000041: Configured SessionFactory: null
+2016-12-14 00:04:11|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-12-14 00:04:11|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-12-14 00:04:11|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-12-14 00:04:11|INFO |HHH000006: Autocommit mode: false
+2016-12-14 00:04:11|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-12-14 00:04:14|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-14 00:04:15|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-12-14 00:04:15|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-12-14 00:04:16|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-12-14 00:04:19|INFO |HHH000228: Running hbm2ddl schema update
+2016-12-14 00:04:19|INFO |HHH000102: Fetching database metadata
+2016-12-14 00:04:19|INFO |HHH000396: Updating schema
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.user
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [mail, dateregistration, name, id, confirmation, hashpass]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: []
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [primary]
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [annitation, user_id, name, id, type]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [id, value, acount_id, fixing_acout_id]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem, primary]
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [annotation, enddate, user_id, name, id, state, startdate]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [fk_7b7j83l6dquot72lsg25y8323, primary]
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [end_date, anotation, goal_id, name, id, state, acount_id, start_date]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh, primary]
+2016-12-14 00:04:20|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-12-14 00:04:20|INFO |HHH000037: Columns: [plan_to_day_id, time_notifice, name, item_goal_plan_id, id, status]
+2016-12-14 00:04:20|INFO |HHH000108: Foreign keys: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn]
+2016-12-14 00:04:20|INFO |HHH000126: Indexes: [fk_5sce36yuykcr4gdv33elbovvs, fk_heohxmesm3ou68j85wfla5xtn, primary]
+2016-12-14 00:04:21|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-12-14 00:04:21|INFO |HHH000037: Columns: [date, user_id, id]
+2016-12-14 00:04:21|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-12-14 00:04:21|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-12-14 00:04:21|INFO |HHH000232: Schema update complete
+2016-12-14 00:04:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></authorization></responce>
+2016-12-14 00:04:22|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userState></request>
+2016-12-14 00:04:22|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-14 00:04:22|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></palnToDay></request>
+2016-12-14 00:04:22|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-14 00:04:38|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:04:39|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:04:42|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId><golaID>12</golaID></goalInfo></request>
+2016-12-14 00:04:42|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state><plan><item><id>11</id><name>tujl</name><annotation>null</annotation><beginDate>12/06/2016</beginDate><endDate>12/28/2016</endDate><state>?? ?????</state></item></plan></goalInfo></responce>
+2016-12-14 00:04:54|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:04:54|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:05:11|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:05:11|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:05:12|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></palnToDay></request>
+2016-12-14 00:05:12|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-14 00:05:13|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:05:13|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:05:16|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userState></request>
+2016-12-14 00:05:16|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-14 00:05:17|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></palnToDay></request>
+2016-12-14 00:05:17|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-14 00:07:07|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:07:07|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:07:08|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></palnToDay></request>
+2016-12-14 00:07:08|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-14 00:07:08|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:07:08|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:07:11|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-14 00:07:11|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state><plan></plan></goalInfo></responce>
+2016-12-14 00:07:12|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-14 00:07:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state><plan></plan></goalInfo></responce>
+2016-12-14 00:07:12|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-14 00:07:12|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state><plan></plan></goalInfo></responce>
+2016-12-14 00:25:44|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userState></request>
+2016-12-14 00:25:44|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-14 00:25:44|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></palnToDay></request>
+2016-12-14 00:25:44|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-14 00:25:46|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userState></request>
+2016-12-14 00:25:46|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>YuriPanasenco</login><dataRegistration>null</dataRegistration><warnings><warning><content>????????? ????????????, ??? ????????? ? ??????????? ?????????? ?????????????? ????????. ?????? ??????????????? ??????????? ???? ???????? ??????.</content><title>????????????? ????????? ??????.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-12-14 00:25:46|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></palnToDay></request>
+2016-12-14 00:25:46|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-12-14 00:32:23|INFO |request |0:0:0:0:0:0:0:1|<request><userGoals><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId></userGoals></request>
+2016-12-14 00:32:23|INFO |responce|0:0:0:0:0:0:0:1|<responce><userGoals><goal><id>1</id><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>7</id><name>njkhbjgvhfcgdxf</name><annotation>etrfygubhn</annotation><beginDate>11/09/2016</beginDate><endDate>11/23/2016</endDate><state>null</state></goal><goal><id>8</id><name>pokijo</name><annotation>poijoun</annotation><beginDate>11/01/2016</beginDate><endDate>11/24/2016</endDate><state>null</state></goal><goal><id>12</id><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state></goal></userGoals></responce>
+2016-12-14 00:32:30|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId><golaID>1</golaID></goalInfo></request>
+2016-12-14 00:32:30|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>nsfdg</name><annotation>yutrgef</annotation><beginDate>11/01/2016</beginDate><endDate>11/23/2016</endDate><state>null</state><plan></plan></goalInfo></responce>
+2016-12-14 00:32:34|INFO |request |0:0:0:0:0:0:0:1|<request><goalInfo><sessionId>5383d06bd468cb0fc716eb092d386764</sessionId><golaID>12</golaID></goalInfo></request>
+2016-12-14 00:32:34|INFO |responce|0:0:0:0:0:0:0:1|<responce><goalInfo><name>ujvgh</name><annotation>ycgjvh kn,</annotation><beginDate>12/06/2016</beginDate><endDate>12/21/2016</endDate><state>?? ?????</state><plan><item><id>11</id><name>tujl</name><annotation>null</annotation><beginDate>12/06/2016</beginDate><endDate>12/28/2016</endDate><state>?? ?????</state></item></plan></goalInfo></responce>

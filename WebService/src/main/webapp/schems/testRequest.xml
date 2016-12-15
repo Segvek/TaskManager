@@ -55,11 +55,16 @@
         <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
     </userGoals>
     
-    <!--пример запроса на получение отчета по конкретной цели-->
+    <!--пример запроса на получение информации по конкретной цели-->
     <goalInfo>
         <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
         <golaID>234</golaID>
     </goalInfo>
+    
+    <goalReport>
+        <sessionId>tnlekmgregreko54ymn6oyh5k4my</sessionId>
+        <golaID>234</golaID>
+    </goalReport>
     
     
     
