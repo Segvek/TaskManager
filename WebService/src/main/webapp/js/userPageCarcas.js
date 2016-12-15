@@ -47,6 +47,11 @@ var userExit = function () {
 var clickItemMenuGoals = function () {
     goalUserPage();
 }
+
+var clickItemMenuAccount = function () {
+    accountUserPage();
+}
+
 var clickItemMenuTomorrow = function () {
     tomorrowUserPage();
 }
