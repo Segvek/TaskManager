@@ -3,15 +3,10 @@ var point071120161153;
 var addNewAccount = function (seorcePage) {
     point071120161153 = seorcePage;
     var content = document.getElementById("content");
-    var viewNewGoal = new View("ViewNewAccount.html");
+    var viewNewAccount = new View("ViewNewAccount.html");
 
-    content.innerHTML = viewNewGoal.getHTML();
-    $('#beginDatePlan').datepicker({
-        autoclose: true
-    });
-    $('#endDatePlan').datepicker({
-        autoclose: true
-    });    
+    content.innerHTML = viewNewAccount.getHTML();
+     
     drawListItemPlan();
 }
 

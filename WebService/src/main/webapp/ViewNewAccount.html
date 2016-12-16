@@ -14,60 +14,37 @@
                     <li>
                         <i class="glyphicon glyphicon-asterisk bg-blue"></i>
                         <div class="timeline-item">
-                            <span class="time">шаг 1</span>
+                            
                             <h3 class="timeline-header">Параментры счета</h3>
                             <div class="timeline-body">
                                 <form>
                                     <div class="form-group">
-                                        <label for="nameNewGoal">Название счета</label>
-                                        <input type="text" class="form-control" id="nameNewGoal">
+                                        <label for="nameNewAccount">Название счета</label>
+                                        <input type="text" class="form-control" id="nameNewAccount">
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <label>Краткое описание счета</label>
-                                        <textarea class="form-control" rows="3" placeholder="Enter ..." id="shortAnotetionGoal" ></textarea>
+                                        <label>Тип счета</label>
+                                        <select class="form-control">
+                                            <option>Кредитный</option>
+                                            <option>Дебитовый</option>
+                                        </select>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <label>Дата планируемого начала:</label>
-                                        <div class="input-group date">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" class="form-control pull-right" id="beginDatePlan">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Дата планируемого достижения:</label>
-                                        <div class="input-group date">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" class="form-control pull-right" id="endDatePlan">
-                                        </div>
+                                        <label>Привязать к пункту плана одной из целей</label>
+                                        <select multiple="" class="form-control">
+                                            <option>пункт плана цели "уехать в америку" 1</option>
+                                            <option>пункт плана цели "уехать в америку" 2</option>
+                                            <option>пункт плана цели "уехать в америку" 3</option>
+                                            <option>пункт плана цели "уехать в америку" 4</option>
+                                            <option>пункт плана цели "уехать в америку" 5</option>
+                                        </select>
                                     </div>
                                     <div class="box-footer">
                                         <a href="#CreatePlanToGoal" class="btn btn-primary">Далее</a>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- timeline item -->
-                    <li>
-                        <a name="CreatePlanToGoal"></a>
-                        <i class="glyphicon glyphicon-asterisk bg-blue"></i>
-                        <div class="timeline-item">
-                            <span class="time">шаг 2</span>
-                            <h3 class="timeline-header">Создание плана достижения цели</h3>
-                            <div class="timeline-body">
-
-                                <table class="table table-condensed">
-                                    <tbody id="tableItemsPlan">
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="box-footer">
-                                <a onclick="createNewGoal();" class="btn btn-primary">Создать цель</a>
                             </div>
                         </div>
                     </li>
