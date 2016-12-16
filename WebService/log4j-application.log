@@ -3864,3 +3864,98 @@ The last packet successfully received from the server was 133 850 milliseconds a
 2016-11-18 13:21:28|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
 2016-11-18 13:21:28|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>901372df023ba8336089a2d5cc448870</sessionId></palnToDay></request>
 2016-11-18 13:21:28|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
+2016-11-18 14:46:32|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>YuriPanasenco</name><hashPass>12345</hashPass></authorization></request>
+2016-11-18 14:46:34|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-18 14:46:34|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-18 14:46:34|INFO |HHH000206: hibernate.properties not found
+2016-11-18 14:46:34|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-18 14:46:34|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-18 14:46:34|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-18 14:46:34|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-18 14:46:34|INFO |HHH000041: Configured SessionFactory: null
+2016-11-18 14:46:35|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-18 14:46:35|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-18 14:46:35|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-18 14:46:35|INFO |HHH000006: Autocommit mode: false
+2016-11-18 14:46:35|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-18 14:46:50|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:46:56|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:46:56|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:47:00|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:47:01|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:47:01|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:47:58|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:48:52|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:48:52|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-18 14:48:52|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-18 14:48:52|INFO |HHH000206: hibernate.properties not found
+2016-11-18 14:48:52|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-18 14:48:53|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-18 14:48:53|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-18 14:48:53|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-18 14:48:53|INFO |HHH000041: Configured SessionFactory: null
+2016-11-18 14:48:53|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-18 14:48:53|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-18 14:48:53|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-18 14:48:53|INFO |HHH000006: Autocommit mode: false
+2016-11-18 14:48:53|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-18 14:49:13|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:49:47|INFO |request |0:0:0:0:0:0:0:1|<request><authorization><name>sergpf</name><hashPass>leo1996</hashPass></authorization></request>
+2016-11-18 14:49:48|INFO |HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-18 14:49:48|INFO |HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-18 14:49:48|INFO |HHH000206: hibernate.properties not found
+2016-11-18 14:49:48|INFO |HHH000021: Bytecode provider name : javassist
+2016-11-18 14:49:48|INFO |HHH000043: Configuring from resource: hibernate.cfg.xml
+2016-11-18 14:49:48|INFO |HHH000040: Configuration resource: hibernate.cfg.xml
+2016-11-18 14:49:48|WARN |HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-18 14:49:48|INFO |HHH000041: Configured SessionFactory: null
+2016-11-18 14:49:48|WARN |HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-18 14:49:48|INFO |HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/webservicetaskmanager?zeroDateTimeBehavior=convertToNull]
+2016-11-18 14:49:48|INFO |HHH000046: Connection properties: {user=root, password=****}
+2016-11-18 14:49:48|INFO |HHH000006: Autocommit mode: false
+2016-11-18 14:49:48|INFO |HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-18 14:49:48|INFO |HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-11-18 14:49:49|INFO |HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-18 14:49:49|INFO |HHH000397: Using ASTQueryTranslatorFactory
+2016-11-18 14:49:49|INFO |HV000001: Hibernate Validator 4.3.1.Final
+2016-11-18 14:49:51|INFO |HHH000228: Running hbm2ddl schema update
+2016-11-18 14:49:51|INFO |HHH000102: Fetching database metadata
+2016-11-18 14:49:51|INFO |HHH000396: Updating schema
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.User
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, mail, hashpass, name, confirmation, dateregistration]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: []
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [primary]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.acount
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, annitation, name, user_id]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_e57un1oftohad5mkh5nclybmf]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [fk_e57un1oftohad5mkh5nclybmf, primary]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.fixing_acount
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_t4kybkkecx9mk2we1h72r4iww]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [fk_t4kybkkecx9mk2we1h72r4iww, primary]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.fixing_hash_acount
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, acount_id, value, fixing_acout_id]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [primary, fk_26e396o8t0bshlgwsldpikq37, fk_ltlj0n2ot83vfgxoggtx5rxem]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.goal
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [annotation, id, startdate, name, user_id, enddate]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_7b7j83l6dquot72lsg25y8323]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [primary, fk_7b7j83l6dquot72lsg25y8323]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.item_goal_plan
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, end_date, acount_id, goal_id, name, anotation, start_date]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [primary, fk_bfacaqha2kfjqrwg6o08m8mre, fk_b4gdxpqap53w6ngdxwru48ahh]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.item_plan_to_day
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, plan_to_day_id, item_goal_plan_id, status, time_notifice, name, anotation]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_heohxmesm3ou68j85wfla5xtn, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [fk_heohxmesm3ou68j85wfla5xtn, primary, fk_5sce36yuykcr4gdv33elbovvs]
+2016-11-18 14:49:51|INFO |HHH000261: Table found: webservicetaskmanager.plan_to_day
+2016-11-18 14:49:51|INFO |HHH000037: Columns: [id, user_id, date]
+2016-11-18 14:49:51|INFO |HHH000108: Foreign keys: [fk_2fcaxdfpxb6300y9b0sqmyf4h]
+2016-11-18 14:49:51|INFO |HHH000126: Indexes: [fk_2fcaxdfpxb6300y9b0sqmyf4h, primary]
+2016-11-18 14:49:51|INFO |HHH000232: Schema update complete
+2016-11-18 14:49:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><authorization><sessionId>eaa4158f8e9ff08aa10e401736de2d23</sessionId></authorization></responce>
+2016-11-18 14:49:52|INFO |request |0:0:0:0:0:0:0:1|<request><userState><sessionId>eaa4158f8e9ff08aa10e401736de2d23</sessionId></userState></request>
+2016-11-18 14:49:52|INFO |responce|0:0:0:0:0:0:0:1|<responce><userState><login>sergpf</login><dataRegistration>null</dataRegistration><warnings><warning><content>Уважаемый пользователь, для избежания и корректного разрешения непредвиденных ситуаций. Просим незамедлительно подтвердить свой почтовый адресс.</content><title>Подтверждение почтового адреса.</title></warning></warnings><countMessage>2</countMessage></userState></responce>
+2016-11-18 14:49:52|INFO |request |0:0:0:0:0:0:0:1|<request><palnToDay><sessionId>eaa4158f8e9ff08aa10e401736de2d23</sessionId></palnToDay></request>
+2016-11-18 14:49:52|INFO |responce|0:0:0:0:0:0:0:1|<responce></responce>
